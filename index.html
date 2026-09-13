@@ -1,561 +1,103 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kieu Van Tuyen (Kiều Văn Tuyên) | AI & Optimization Researcher</title>
-  
-  <!-- SEO & Academic Metadata -->
-  <meta name="description" content="Personal academic homepage of Kieu Van Tuyen (Kiều Văn Tuyên), Master of Science in Computer Science from VNU University of Engineering and Technology (VNU-UET). Researching SAT/MaxSAT, Combinatorial Optimization, and AI.">
-  <meta name="keywords" content="Kieu Van Tuyen, Kiều Văn Tuyên, VNU-UET, Computer Science, SAT, MaxSAT, Combinatorial Optimization, Operations Research, Dr. To Van Khanh, Constraint Programming, LLM for Optimization">
-  <meta name="author" content="Kieu Van Tuyen">
-  <link rel="canonical" href="https://kieuvantuyen01.github.io/">
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Kieu Van Tuyen (Kiều Văn Tuyên)</title>
 
-  <!-- Open Graph / Social Meta -->
-  <meta property="og:type" content="profile">
-  <meta property="og:title" content="Kieu Van Tuyen | Academic Profile">
-  <meta property="og:description" content="Researcher in SAT/MaxSAT Solving, Mathematical Optimization, and AI at VNU University of Engineering and Technology.">
-  <meta property="og:url" content="https://kieuvantuyen01.github.io/">
-  <meta property="og:image" content="https://kieuvantuyen01.github.io/assets/avatar.jpg">
+    <meta name="author" content="Kieu Van Tuyen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal academic homepage of Kieu Van Tuyen (Kiều Văn Tuyên), Master of Science in Computer Science from VNU University of Engineering and Technology (VNU-UET).">
+    
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
 
-  <!-- Google Fonts: Plus Jakarta Sans & Outfit & JetBrains Mono -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <body>
+    <div class="main-container">
 
-  <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+      <!-- Header / Profile Section -->
+      <table style="width:100%; border:0; border-spacing:0; margin-bottom:20px;" class="intro-table">
+        <tbody>
+          <tr>
+            <td style="width:72%; vertical-align:middle; padding-right:20px;" class="intro-text-col">
+              <h1 class="name">
+                Kieu Van Tuyen <span class="native-name">(Kiều Văn Tuyên)</span>
+              </h1>
+              <p>
+                I am a researcher in Computer Science at <a href="https://uet.vnu.edu.vn/">VNU University of Engineering and Technology (VNU-UET)</a>, Hanoi, Vietnam. I recently earned my Master of Science in Computer Science (December 2025) with highest honors (GPA 3.92/4.00, thesis defense score 9.8/10.0), advised by <a href="https://scholar.google.com/citations?user=kq2ht6wAAAAJ">Dr. To Van Khanh</a> at the Laboratory of Embedded Systems.
+              </p>
+              <p>
+                My research focuses on <strong>Boolean Satisfiability (SAT)</strong>, <strong>MaxSAT</strong>, and <strong>Combinatorial Optimization</strong>. I develop novel compact constraint encoding methods (such as staircase at-most-one, sequential counter, and precedence propagation) for complex NP-hard problems in task scheduling, train rescheduling, two-dimensional packing, and assembly line balancing, frequently outperforming commercial solvers like IBM CPLEX, Gurobi, and Google OR-Tools.
+              </p>
+              <p>
+                I am also interested in the intersection of <strong>Large Language Models (LLMs)</strong> and mathematical optimization for automated model formulation and solver configuration.
+              </p>
+              <p>
+                <strong>I am actively seeking PhD opportunities</strong> in Optimization, Automated Reasoning, and Artificial Intelligence starting in 2026/2027.
+              </p>
+              <p class="links-row">
+                <a href="mailto:tuyenkv@vnu.edu.vn">Email</a> &nbsp;/&nbsp;
+                <a href="assets/cv.pdf">CV</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=Zq72t0wAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
+                <a href="https://github.com/kieuvantuyen01">GitHub</a> &nbsp;/&nbsp;
+                <a href="https://www.linkedin.com/in/tuy%C3%AAn-ki%E1%BB%81u-v%C4%83n-443b57143/">LinkedIn</a>
+              </p>
+            </td>
+            <td style="width:28%; vertical-align:middle; text-align:center;" class="intro-photo-col">
+              <img src="assets/avatar.jpg" alt="Kieu Van Tuyen" class="profile-photo">
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-  <!-- Academic Schema (JSON-LD) for Google Scholar & Crawlers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Kieu Van Tuyen",
-    "alternateName": "Kiều Văn Tuyên",
-    "jobTitle": "Graduate Researcher & Teaching Assistant",
-    "worksFor": {
-      "@type": "CollegeOrUniversity",
-      "name": "VNU University of Engineering and Technology"
-    },
-    "alumniOf": [
-      {
-        "@type": "EducationalOrganization",
-        "name": "VNU University of Engineering and Technology",
-        "award": "Master of Science in Computer Science"
-      },
-      {
-        "@type": "EducationalOrganization",
-        "name": "VNU University of Engineering and Technology",
-        "award": "Bachelor of Science in Computer Science"
-      }
-    ],
-    "url": "https://kieuvantuyen01.github.io/",
-    "sameAs": [
-      "https://scholar.google.com/citations?user=Zq72t0wAAAAJ",
-      "https://github.com/kieuvantuyen01",
-      "https://www.linkedin.com/in/tuy%C3%AAn-ki%E1%BB%81u-v%C4%83n-443b57143/"
-    ],
-    "knowsAbout": [
-      "Boolean Satisfiability (SAT)",
-      "MaxSAT",
-      "Combinatorial Optimization",
-      "Constraint Programming",
-      "Operations Research",
-      "Large Language Models for Optimization"
-    ]
-  }
-  </script>
-</head>
-<body>
-
-  <!-- Top Announcement / Status Bar -->
-  <div class="status-bar" id="status-bar">
-    <span>🎓 <strong>News:</strong> Master of Science in Computer Science (GPA 3.92/4.0). Actively seeking <strong>PhD Opportunities</strong> in Optimization & AI! <a href="#contact">Get in touch &rarr;</a></span>
-  </div>
-
-  <!-- Sticky Navbar -->
-  <header class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="#home" class="nav-brand">
-        <img src="assets/avatar.jpg" alt="Kieu Van Tuyen" class="brand-avatar">
-        <div>
-          <span class="brand-name">Kieu Van Tuyen</span>
-          <span class="brand-role">VNU-UET Researcher</span>
-        </div>
-      </a>
-
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#research" class="nav-link">Research</a></li>
-        <li><a href="#news" class="nav-link">News</a></li>
-        <li><a href="#publications" class="nav-link">Publications</a></li>
-        <li><a href="#projects" class="nav-link">Code & Projects</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#awards" class="nav-link">Awards</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+      <!-- News Section -->
+      <h2>News</h2>
+      <ul>
+        <li>
+          <strong>Aug 2026:</strong> Two new preprints released: cycle time minimization for assembly line balancing under power constraints (<a href="https://arxiv.org/abs/2608.24779">arXiv:2608.24779</a>) and B2B meeting scheduling with idle-time balancing (<a href="https://arxiv.org/abs/2608.00614">arXiv:2608.00614</a>).
+        </li>
+        <li>
+          <strong>Jun 2026:</strong> Preprint on real-time train rescheduling via MaxSAT-DDD and precedence propagation released on <a href="https://arxiv.org/abs/2606.16814">arXiv:2606.16814</a>.
+        </li>
+        <li>
+          <strong>Apr 2026:</strong> Preprint on solving the 2D single stock cutting stock problem with SAT and MaxSAT released on <a href="https://arxiv.org/abs/2604.01732">arXiv:2604.01732</a>.
+        </li>
+        <li>
+          <strong>Feb 2026:</strong> Preprint on a systematic design study of SAT encodings for bandwidth coloring released on <a href="https://arxiv.org/abs/2602.08423">arXiv:2602.08423</a>.
+        </li>
+        <li>
+          <strong>Dec 2025:</strong> Successfully defended Master's Thesis on <em>Optimal SAT Encoding Methods for Combinatorial Optimization and Scheduling Problems</em> with a score of <strong>9.8 / 10.0</strong> at VNU-UET.
+        </li>
+        <li>
+          <strong>Sep 2025:</strong> Journal paper accepted and published in <em>Cybernetics and Information Technologies (CIT)</em>.
+        </li>
+        <li>
+          <strong>2025:</strong> Conference paper on Staircase At-Most-One constraints presented at <em>ICAART 2025</em> (SCITEPRESS).
+        </li>
       </ul>
 
-      <div class="nav-actions">
-        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle dark/light mode" title="Toggle theme">
-          <!-- Sun Icon (Light) -->
-          <svg class="theme-icon-light" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-          <!-- Moon Icon (Dark) -->
-          <svg class="theme-icon-dark" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </button>
+      <!-- Publications Section -->
+      <h2>Publications</h2>
+      <p>
+        Representative papers are <span class="highlight">highlighted</span>.
+      </p>
 
-        <a href="assets/cv.pdf" class="btn-cv-header" download="Kieu_Van_Tuyen_CV.pdf" id="header-cv-btn" title="Download CV">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-            <polyline points="7 10 12 15 17 10"></polyline>
-            <line x1="12" y1="15" x2="12" y2="3"></line>
-          </svg>
-          <span>CV</span>
-        </a>
-
-        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open mobile menu">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero Section -->
-    <section class="section hero-section" id="home">
-      <div class="container hero-grid">
-        <!-- Hero Left / Bio Intro -->
-        <div class="hero-content">
-          <div class="hero-intro-badge">
-            <span class="status-dot"></span>
-            <span>Seeking PhD Positions (2026–2027)</span>
-          </div>
-
-          <h1 class="hero-title">
-            Kieu Van Tuyen
-            <span class="hero-title-native">(Kiều Văn Tuyên)</span>
-          </h1>
-
-          <p class="hero-subtitle">
-            Master of Science in Computer Science &bull; AI & Optimization Researcher
-          </p>
-
-          <div class="hero-affil">
-            <div>
-              <strong>Faculty of Information Technology</strong> &bull; VNU University of Engineering and Technology (VNU-UET)
-            </div>
-            <div>
-              Laboratory of Embedded Systems &bull; Supervised by <strong>Dr. To Van Khanh</strong>
-            </div>
-          </div>
-
-          <p class="hero-bio-short">
-            I specialize in <strong>Boolean Satisfiability (SAT)</strong>, <strong>MaxSAT</strong>, and <strong>Mathematical Optimization</strong>. My research develops novel compact encoding methods and hybrid algorithmic frameworks that outperform state-of-the-art commercial solvers (IBM CPLEX, Gurobi, Google OR-Tools) on NP-hard industrial scheduling, 2D packing, and transportation problems.
-          </p>
-
-          <div class="hero-actions">
-            <a href="assets/cv.pdf" class="btn btn-primary" download="Kieu_Van_Tuyen_CV.pdf" id="hero-download-cv">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7 10 12 15 17 10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
-              </svg>
-              <span>Download CV (PDF)</span>
-            </a>
-
-            <a href="https://scholar.google.com/citations?user=Zq72t0wAAAAJ" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="hero-scholar-btn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4 3.18v6.82h3v-4.5h10v4.5h3v-6.82l4-3.18L12 0z"/>
-              </svg>
-              <span>Google Scholar</span>
-            </a>
-
-            <a href="https://github.com/kieuvantuyen01" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="hero-github-btn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-              </svg>
-              <span>GitHub</span>
-            </a>
-          </div>
-
-          <div class="hero-meta-chips">
-            <span class="hero-meta-chip">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-              Hanoi, Vietnam
-            </span>
-            <span class="hero-meta-chip">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-              <a href="mailto:tuyenkv@vnu.edu.vn" style="color: inherit;">tuyenkv@vnu.edu.vn</a>
-            </span>
-            <span class="hero-meta-chip">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
-              +84 961 309 175
-            </span>
-          </div>
+      <!-- Paper 1 (Highlighted) -->
+      <div class="paper-entry highlighted">
+        <a href="https://doi.org/10.2478/cait-2025-0027" class="papertitle">A Compact SAT Encoding for Non-Preemptive Task Scheduling on Multiple Identical Resources</a>
+        <div class="paper-authors">
+          <strong>T. V. Kieu</strong>, T. V. Khanh
         </div>
-
-        <!-- Hero Right / Portrait Photo Card -->
-        <div class="hero-portrait-wrapper">
-          <div class="portrait-card">
-            <div class="portrait-img-container">
-              <img src="assets/avatar.jpg" alt="Portrait of Kieu Van Tuyen (Kiều Văn Tuyên)" class="portrait-img">
-              <div class="portrait-badge">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
-                <span>M.Sc. Thesis Score: <strong>9.8 / 10.0</strong></span>
-              </div>
-            </div>
-
-            <div class="portrait-quick-links">
-              <a href="https://scholar.google.com/citations?user=Zq72t0wAAAAJ" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Google Scholar">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4 3.18v6.82h3v-4.5h10v4.5h3v-6.82l4-3.18L12 0z"/>
-                </svg>
-              </a>
-              <a href="https://github.com/kieuvantuyen01" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                </svg>
-              </a>
-              <a href="https://www.linkedin.com/in/tuy%C3%AAn-ki%E1%BB%81u-v%C4%83n-443b57143/" target="_blank" rel="noopener noreferrer" class="icon-btn" title="LinkedIn">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>
-              </a>
-              <button onclick="copyEmail('tuyenkv@vnu.edu.vn')" class="icon-btn" title="Copy Institutional Email">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                  <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
-              </button>
-            </div>
-          </div>
+        <div class="paper-venue">
+          Cybernetics and Information Technologies (CIT), Vol. 25, No. 3, pp. 104–122, 2025.
         </div>
-      </div>
-    </section>
-
-    <!-- Key Stats Strip -->
-    <section class="stats-strip">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-number">14+</div>
-            <div class="stat-label">Publications & Preprints</div>
-            <div class="stat-desc">Journals, Conferences & arXiv</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">4+</div>
-            <div class="stat-label">First-Author Works</div>
-            <div class="stat-desc">Lead novel encoding frameworks</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">3.92</div>
-            <div class="stat-label">Master's GPA (/4.00)</div>
-            <div class="stat-desc">Highest Distinction (Thesis: 9.8/10)</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">5+</div>
-            <div class="stat-label">National Tech Awards</div>
-            <div class="stat-desc">AWS Build On, Ideathons & Hackathons</div>
-          </div>
+        <div class="paper-links">
+          <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:9yKSN-GCB0IC">[scholar]</a> /
+          <a href="javascript:toggleBibtex('cit2025')">[bibtex]</a>
         </div>
-      </div>
-    </section>
-
-    <!-- About & Research Pillars Section -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Biography & Overview</span>
-          <h2 class="section-title">About Me & Academic Journey</h2>
-          <p class="section-subtitle">Bridging mathematical rigor, Boolean Satisfiability solvers, and AI-driven reasoning to solve complex industrial optimization problems.</p>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-text">
-            <p>
-              I recently graduated with a <strong>Master of Science in Computer Science</strong> (December 2025) from <strong>VNU University of Engineering and Technology (VNU-UET)</strong>, achieving a GPA of <strong>3.92 / 4.00</strong>. My Master's thesis, titled <em>"Optimal SAT Encoding Methods for Combinatorial Optimization and Scheduling Problems"</em>, was awarded an outstanding score of <strong>9.8 / 10.0</strong> under the guidance of <strong>Dr. To Van Khanh</strong> at the Laboratory of Embedded Systems.
-            </p>
-            <p>
-              Prior to my M.Sc., I received my <strong>Bachelor of Science in Computer Science</strong> from VNU-UET with a GPA of <strong>3.83 / 4.00</strong>, where my thesis on <em>"Verification of Multithreaded Programs based on Symbolic Execution"</em> (defended with 9.5/10) earned the Council's Excellent Thesis Honor.
-            </p>
-            <p>
-              My research lies at the intersection of <strong>Combinatorial Optimization</strong>, <strong>Boolean Satisfiability (SAT / MaxSAT)</strong>, <strong>Constraint Programming (CP)</strong>, and <strong>Artificial Intelligence</strong>. Specifically, I investigate how compact clause representations, symmetry breaking, and dynamic constraint learning can scale exact solvers to problems previously deemed intractable for commercial MIP engines like IBM CPLEX, Gurobi, and Google OR-Tools.
-            </p>
-            <p>
-              I am strongly interested in pursuing <strong>PhD research</strong> to explore how <strong>Large Language Models (LLMs)</strong> and neuro-symbolic techniques can automatically formulate mathematical optimization models from natural language, synthesize efficient SAT/MIP encodings, and dynamically configure solvers for real-world logistics, train rescheduling, and power management systems.
-            </p>
-          </div>
-
-          <div class="about-highlights">
-            <h3 class="about-highlights-title">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-              </svg>
-              <span>Research Highlights</span>
-            </h3>
-            <ul class="highlight-list">
-              <li class="highlight-item">
-                <div class="highlight-icon">✓</div>
-                <div><strong>Outperforming Commercial Solvers:</strong> Developed compact SAT/MaxSAT formulations that surpass IBM CPLEX and Google OR-Tools on benchmark scheduling and 2D bin packing instances.</div>
-              </li>
-              <li class="highlight-item">
-                <div class="highlight-icon">✓</div>
-                <div><strong>Solving Open Instances:</strong> Solved previously open benchmark instances in 2D Strip Packing and Non-Preemptive Task Scheduling.</div>
-              </li>
-              <li class="highlight-item">
-                <div class="highlight-icon">✓</div>
-                <div><strong>Novel Encoding Paradigms:</strong> Proposed Staircase At-Most-One (AMO), Sequential Counter, and Ladder-shaped Cardinality constraint encodings with reduced auxiliary variables.</div>
-              </li>
-              <li class="highlight-item">
-                <div class="highlight-icon">✓</div>
-                <div><strong>Real-Time Transportation:</strong> Formulated MaxSAT-DDD with precedence propagation for real-time railway traffic train rescheduling.</div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Research Pillars -->
-        <div class="section-header" style="margin-top: 4.5rem; margin-bottom: 2rem;" id="research">
-          <span class="section-tag">Core Research Areas</span>
-          <h2 class="section-title">Areas of Expertise</h2>
-          <p class="section-subtitle">Core themes and methodologies driving my publications and open-source solver tools.</p>
-        </div>
-
-        <div class="pillars-grid">
-          <!-- Pillar 1 -->
-          <div class="pillar-card">
-            <div class="pillar-icon-box">⚡</div>
-            <h3 class="pillar-title">SAT & MaxSAT Solving</h3>
-            <p class="pillar-desc">
-              Designing compact boolean encodings, staircase AMO, sequential counter structures, and cardinality formulations for CDCL SAT solvers (CaDiCaL, Glucose, MiniSat, Kissat) and MaxSAT solvers (RC2).
-            </p>
-          </div>
-
-          <!-- Pillar 2 -->
-          <div class="pillar-card">
-            <div class="pillar-icon-box">📦</div>
-            <h3 class="pillar-title">2D Packing & Cutting</h3>
-            <p class="pillar-desc">
-              Comprehensive exact approaches for Two-Dimensional Strip Packing, 2D Bin Packing, and Single Stock Size Cutting Stock problems, achieving state-of-the-art results compared to MIP and CP.
-            </p>
-          </div>
-
-          <!-- Pillar 3 -->
-          <div class="pillar-card">
-            <div class="pillar-icon-box">🚆</div>
-            <h3 class="pillar-title">Scheduling & Transportation</h3>
-            <p class="pillar-desc">
-              Non-preemptive task scheduling on identical resources, real-time train rescheduling using MaxSAT-DDD with precedence propagation, B2B meeting scheduling, and nurse rostering under sequence constraints.
-            </p>
-          </div>
-
-          <!-- Pillar 4 -->
-          <div class="pillar-card">
-            <div class="pillar-icon-box">⚙️</div>
-            <h3 class="pillar-title">Assembly Lines & Power Peaks</h3>
-            <p class="pillar-desc">
-              Minimizing cycle time and leveling peak power consumption in Simple Assembly Line Balancing (SALBP) and power-constrained scheduling problems through exact discrete modeling.
-            </p>
-          </div>
-
-          <!-- Pillar 5 -->
-          <div class="pillar-card">
-            <div class="pillar-icon-box">🤖</div>
-            <h3 class="pillar-title">LLMs for Optimization</h3>
-            <p class="pillar-desc">
-              Harnessing Large Language Models to parse informal problem specifications, automatically generate verified constraint models (SAT/MIP/CP), and optimize solver portfolios.
-            </p>
-          </div>
-
-          <!-- Pillar 6 -->
-          <div class="pillar-card">
-            <div class="pillar-icon-box">🛡️</div>
-            <h3 class="pillar-title">Formal Verification & SMT</h3>
-            <p class="pillar-desc">
-              Symbolic execution of concurrent multithreaded software, SMT-based Multi-Agent Path Finding (MAPF), and formal verification of critical safety properties.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- Recent News Section -->
-    <section class="section" id="news">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Updates & Milestones</span>
-          <h2 class="section-title">Latest News</h2>
-          <p class="section-subtitle">Recent academic publications, conference presentations, and research achievements.</p>
-        </div>
-
-        <div class="news-timeline">
-          <div class="news-card">
-            <div class="news-date-badge">Aug 2026</div>
-            <div class="news-content">
-              Preprint released: <strong>"Cycle time minimization for the simple assembly line balancing problem under peak power constraints"</strong> with B. G. Hoang and Dr. T. V. Khanh on <a href="https://arxiv.org/abs/2608.24779" target="_blank" rel="noopener noreferrer">arXiv:2608.24779</a>.
-            </div>
-          </div>
-
-          <div class="news-card">
-            <div class="news-date-badge">Aug 2026</div>
-            <div class="news-content">
-              Preprint released: <strong>"Compact SAT and MaxSAT Encodings for Business-to-Business Meeting Scheduling with Idle-Time Balancing"</strong> with L. D. Nguyen and Dr. T. V. Khanh on <a href="https://arxiv.org/abs/2608.00614" target="_blank" rel="noopener noreferrer">arXiv:2608.00614</a>.
-            </div>
-          </div>
-
-          <div class="news-card">
-            <div class="news-date-badge">Jun 2026</div>
-            <div class="news-content">
-              Preprint released: <strong>"An Efficient MaxSAT-DDD Approach for Train Rescheduling via Precedence Propagation and Hybrid AMO Encodings"</strong> with T. H. Nguyen and Dr. T. V. Khanh on <a href="https://arxiv.org/abs/2606.16814" target="_blank" rel="noopener noreferrer">arXiv:2606.16814</a>.
-            </div>
-          </div>
-
-          <div class="news-card">
-            <div class="news-date-badge">Apr 2026</div>
-            <div class="news-content">
-              Preprint released: <strong>"Solving the Two-dimensional single stock size Cutting Stock Problem with SAT and MaxSAT"</strong> with C. L. Hoang and Dr. T. V. Khanh on <a href="https://arxiv.org/abs/2604.01732" target="_blank" rel="noopener noreferrer">arXiv:2604.01732</a>.
-            </div>
-          </div>
-
-          <div class="news-card">
-            <div class="news-date-badge">Feb 2026</div>
-            <div class="news-content">
-              Preprint released: <strong>"SAT Encodings for Bandwidth Coloring: A Systematic Design Study"</strong> with D. T. K. Nguyen and Dr. T. V. Khanh on <a href="https://arxiv.org/abs/2602.08423" target="_blank" rel="noopener noreferrer">arXiv:2602.08423</a>.
-            </div>
-          </div>
-
-          <div class="news-card">
-            <div class="news-date-badge">Dec 2025</div>
-            <div class="news-content">
-              Successfully defended Master's Thesis: <strong>"Optimal SAT Encoding Methods for Combinatorial Optimization and Scheduling Problems"</strong> with highest honor score <strong>9.8 / 10.0</strong> at VNU-UET!
-            </div>
-          </div>
-
-          <div class="news-card">
-            <div class="news-date-badge">Sep 2025</div>
-            <div class="news-content">
-              Journal paper published in <strong>Cybernetics and Information Technologies (CIT)</strong>: <em>"A Compact SAT Encoding for Non-Preemptive Task Scheduling on Multiple Identical Resources"</em>.
-            </div>
-          </div>
-
-          <div class="news-card">
-            <div class="news-date-badge">2025</div>
-            <div class="news-content">
-              Conference paper presented at <strong>ICAART 2024/2025 (SCITEPRESS)</strong>: <em>"Sequential Counter Encoding for Staircase At-Most-One Constraints"</em> (5 citations).
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- Publications Section -->
-    <section class="section" id="publications">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Scholarly Output</span>
-          <h2 class="section-title">Publications & Manuscripts</h2>
-          <p class="section-subtitle">
-            Peer-reviewed journal articles, conference proceedings, and preprints. Filter by category or search by topic, solver, or co-author.
-          </p>
-        </div>
-
-        <!-- Controls: Filters & Search -->
-        <div class="pub-controls">
-          <div class="pub-filter-tabs">
-            <button class="pub-filter-btn active" data-filter="all">All (14)</button>
-            <button class="pub-filter-btn" data-filter="selected">Selected</button>
-            <button class="pub-filter-btn" data-filter="journal">Journals (5)</button>
-            <button class="pub-filter-btn" data-filter="conference">Conferences (3)</button>
-            <button class="pub-filter-btn" data-filter="preprint">Preprints (5)</button>
-            <button class="pub-filter-btn" data-filter="thesis">Thesis (1)</button>
-          </div>
-
-          <div class="pub-search-box">
-            <svg class="pub-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-            <input type="text" id="pub-search" class="pub-search-input" placeholder="Search papers (e.g. MaxSAT, scheduling, packing)..." aria-label="Search publications">
-          </div>
-        </div>
-
-        <!-- Publications List -->
-        <div class="pub-list" id="pub-list">
-
-          <!-- Paper 1: CIT Journal (Task Scheduling) -->
-          <article class="pub-card" data-category="journal" data-selected="true" id="pub-cit-2025">
-            <div class="pub-meta-top">
-              <span class="badge badge-journal">Journal</span>
-              <span class="badge badge-first">First Author</span>
-              <span class="pub-year">2025</span>
-            </div>
-            <h3 class="pub-title">
-              <a href="https://doi.org/10.2478/cait-2025-0027" target="_blank" rel="noopener noreferrer">
-                A Compact SAT Encoding for Non-Preemptive Task Scheduling on Multiple Identical Resources
-              </a>
-            </h3>
-            <p class="pub-authors">
-              <span class="author-self">T. V. Kieu</span>, T. V. Khanh
-            </p>
-            <p class="pub-venue">
-              Cybernetics and Information Technologies (CIT), Vol. 25, No. 3, pp. 104–122, 2025.
-            </p>
-            <div class="pub-actions">
-              <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:9yKSN-GCB0IC" target="_blank" rel="noopener noreferrer" class="pub-action-btn">
-                <span>Scholar</span>
-              </a>
-              <button onclick="toggleAbstract('cit2025')" class="pub-action-btn">Abstract</button>
-              <button onclick="toggleBibtex('cit2025')" class="pub-action-btn">BibTeX</button>
-            </div>
-
-            <!-- Abstract Drawer -->
-            <div class="drawer-container" id="abstract-cit2025">
-              <div class="drawer-header">
-                <span>Abstract</span>
-                <button onclick="toggleAbstract('cit2025')" class="close-drawer-btn">&times;</button>
-              </div>
-              <p class="drawer-content">
-                This paper addresses the non-preemptive task scheduling problem on multiple identical resources, an NP-hard optimization challenge widely found in manufacturing and high-performance computing. We present a novel compact Boolean Satisfiability (SAT) encoding scheme that significantly reduces the number of clauses and auxiliary variables while preserving strong unit propagation. Experimental evaluations against leading commercial solvers show that our SAT model outperforms IBM CPLEX and Google OR-Tools on difficult benchmark instances.
-              </p>
-            </div>
-
-            <!-- BibTeX Drawer -->
-            <div class="drawer-container" id="bibtex-cit2025">
-              <div class="drawer-header">
-                <span>BibTeX</span>
-                <button onclick="copyBibtex('cit2025')" class="copy-btn">Copy BibTeX</button>
-              </div>
-              <code class="bibtex-code" id="bibtex-code-cit2025">@article{kieu2025compact,
+        <p class="paper-desc">
+          We propose a novel compact Boolean Satisfiability (SAT) encoding that substantially reduces clauses and auxiliary variables while preserving unit propagation, outperforming commercial MIP solvers on difficult scheduling benchmarks.
+        </p>
+        <pre class="bibtex-box" id="bibtex-cit2025">@article{kieu2025compact,
   title={A Compact SAT Encoding for Non-Preemptive Task Scheduling on Multiple Identical Resources},
   author={Kieu, Tuyen Van and To, Khanh Van},
   journal={Cybernetics and Information Technologies},
@@ -564,152 +106,76 @@
   pages={104--122},
   year={2025},
   publisher={Sciendo}
-}</code>
-            </div>
-          </article>
+}</pre>
+      </div>
 
-          <!-- Paper 2: Pesquisa Operacional (Strip Packing) -->
-          <article class="pub-card" data-category="journal" data-selected="true" id="pub-strip-packing">
-            <div class="pub-meta-top">
-              <span class="badge badge-journal">Journal</span>
-              <span class="badge badge-first">First Author</span>
-              <span class="pub-year">2025</span>
-            </div>
-            <h3 class="pub-title">
-              <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:2osOgNQ5qMEC" target="_blank" rel="noopener noreferrer">
-                Efficient SAT and MaxSAT Techniques for Solving the Two-Dimensional Strip Packing Problem
-              </a>
-            </h3>
-            <p class="pub-authors">
-              <span class="author-self">T. V. Kieu</span>, D. Q. Le, T. V. Khanh
-            </p>
-            <p class="pub-venue">
-              Pesquisa Operacional (SciELO Preprints), 2025.
-            </p>
-            <div class="pub-actions">
-              <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:2osOgNQ5qMEC" target="_blank" rel="noopener noreferrer" class="pub-action-btn">
-                <span>Scholar</span>
-              </a>
-              <button onclick="toggleAbstract('strip2025')" class="pub-action-btn">Abstract</button>
-              <button onclick="toggleBibtex('strip2025')" class="pub-action-btn">BibTeX</button>
-            </div>
-
-            <div class="drawer-container" id="abstract-strip2025">
-              <div class="drawer-header">
-                <span>Abstract</span>
-                <button onclick="toggleAbstract('strip2025')" class="close-drawer-btn">&times;</button>
-              </div>
-              <p class="drawer-content">
-                The Two-Dimensional Strip Packing Problem (2D-SPP) requires packing a set of rectangles into a strip of fixed width minimizing total height. We develop unified SAT and MaxSAT formulation techniques utilizing order encodings, specialized non-overlapping constraints, and symmetry breaking. The proposed framework establishes new upper bounds and solves several previously open benchmark instances.
-              </p>
-            </div>
-
-            <div class="drawer-container" id="bibtex-strip2025">
-              <div class="drawer-header">
-                <span>BibTeX</span>
-                <button onclick="copyBibtex('strip2025')" class="copy-btn">Copy BibTeX</button>
-              </div>
-              <code class="bibtex-code" id="bibtex-code-strip2025">@article{kieu2025strippacking,
+      <!-- Paper 2 (Highlighted) -->
+      <div class="paper-entry highlighted">
+        <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:2osOgNQ5qMEC" class="papertitle">Efficient SAT and MaxSAT Techniques for Solving the Two-Dimensional Strip Packing Problem</a>
+        <div class="paper-authors">
+          <strong>T. V. Kieu</strong>, D. Q. Le, T. V. Khanh
+        </div>
+        <div class="paper-venue">
+          Pesquisa Operacional (SciELO Preprints), 2025.
+        </div>
+        <div class="paper-links">
+          <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:2osOgNQ5qMEC">[scholar]</a> /
+          <a href="javascript:toggleBibtex('strip2025')">[bibtex]</a>
+        </div>
+        <p class="paper-desc">
+          Presents exact SAT and MaxSAT formulation techniques utilizing order encodings, specialized non-overlapping constraints, and symmetry breaking for 2D Strip Packing, establishing new upper bounds and solving previously open benchmark instances.
+        </p>
+        <pre class="bibtex-box" id="bibtex-strip2025">@article{kieu2025strippacking,
   title={Efficient SAT and MaxSAT Techniques for Solving the Two-Dimensional Strip Packing Problem},
   author={Kieu, Tuyen Van and Le, Dang Quang and To, Khanh Van},
   journal={Pesquisa Operacional},
   year={2025}
-}</code>
-            </div>
-          </article>
+}</pre>
+      </div>
 
-          <!-- Paper 3: RAIRO (Social Golfer) -->
-          <article class="pub-card" data-category="journal" data-selected="false" id="pub-social-golfer">
-            <div class="pub-meta-top">
-              <span class="badge badge-journal">Journal</span>
-              <span class="badge badge-first">First Author</span>
-              <span class="pub-year">2025</span>
-            </div>
-            <h3 class="pub-title">
-              <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:IjCSPb-OGe4C" target="_blank" rel="noopener noreferrer">
-                An Efficient SAT Encoding for Solving the Social Golfer Problem
-              </a>
-            </h3>
-            <p class="pub-authors">
-              <span class="author-self">T. V. Kieu</span>, N. T. Nguyen, T. V. Khanh
-            </p>
-            <p class="pub-venue">
-              RAIRO - Operations Research, 2025.
-            </p>
-            <div class="pub-actions">
-              <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:IjCSPb-OGe4C" target="_blank" rel="noopener noreferrer" class="pub-action-btn">
-                <span>Scholar</span>
-              </a>
-              <button onclick="toggleAbstract('golfer2025')" class="pub-action-btn">Abstract</button>
-              <button onclick="toggleBibtex('golfer2025')" class="pub-action-btn">BibTeX</button>
-            </div>
+      <!-- Paper 3 (Highlighted) -->
+      <div class="paper-entry highlighted">
+        <a href="https://arxiv.org/abs/2606.16814" class="papertitle">An Efficient MaxSAT-DDD Approach for Train Rescheduling via Precedence Propagation and Hybrid AMO Encodings</a>
+        <div class="paper-authors">
+          <strong>T. V. Kieu</strong>, T. H. Nguyen, T. V. Khanh
+        </div>
+        <div class="paper-venue">
+          arXiv preprint arXiv:2606.16814 [cs.AI], 2026.
+        </div>
+        <div class="paper-links">
+          <a href="https://arxiv.org/abs/2606.16814">[arXiv]</a> /
+          <a href="https://github.com/kieuvantuyen01/maxsattrainscheduling">[code]</a> /
+          <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:W7OEmFMy1HYC">[scholar]</a> /
+          <a href="javascript:toggleBibtex('train2026')">[bibtex]</a>
+        </div>
+        <p class="paper-desc">
+          Develops a Disjunctive Delay Decision (DDD) MaxSAT framework combined with precedence propagation and hybrid At-Most-One encodings for real-time railway train rescheduling under severe network delays.
+        </p>
+        <pre class="bibtex-box" id="bibtex-train2026">@article{kieu2026train,
+  title={An Efficient MaxSAT-DDD Approach for Train Rescheduling via Precedence Propagation and Hybrid AMO Encodings},
+  author={Kieu, Tuyen Van and Nguyen, Tien Hieu and To, Khanh Van},
+  journal={arXiv preprint arXiv:2606.16814},
+  year={2026}
+}</pre>
+      </div>
 
-            <div class="drawer-container" id="abstract-golfer2025">
-              <div class="drawer-header">
-                <span>Abstract</span>
-                <button onclick="toggleAbstract('golfer2025')" class="close-drawer-btn">&times;</button>
-              </div>
-              <p class="drawer-content">
-                The Social Golfer Problem (CSPLib prob027) is a famous combinatorial design challenge. We propose an efficient Boolean satisfiability encoding that combines lexicographical symmetry-breaking constraints with compact cardinality formulations, cutting execution times across extensive benchmark configurations.
-              </p>
-            </div>
-
-            <div class="drawer-container" id="bibtex-golfer2025">
-              <div class="drawer-header">
-                <span>BibTeX</span>
-                <button onclick="copyBibtex('golfer2025')" class="copy-btn">Copy BibTeX</button>
-              </div>
-              <code class="bibtex-code" id="bibtex-code-golfer2025">@article{kieu2025socialgolfer,
-  title={An Efficient SAT Encoding for Solving the Social Golfer Problem},
-  author={Kieu, Tuyen Van and Nguyen, Nhat Tan and To, Khanh Van},
-  journal={RAIRO - Operations Research},
-  year={2025}
-}</code>
-            </div>
-          </article>
-
-          <!-- Paper 4: ICAART Conference (Staircase AMO) -->
-          <article class="pub-card" data-category="conference" data-selected="true" id="pub-icaart-2024">
-            <div class="pub-meta-top">
-              <span class="badge badge-conf">Conference</span>
-              <span class="badge badge-citations">5 Citations</span>
-              <span class="pub-year">2024/2025</span>
-            </div>
-            <h3 class="pub-title">
-              <a href="https://www.scitepress.org/Papers/2025/131718/" target="_blank" rel="noopener noreferrer">
-                Sequential Counter Encoding for Staircase At-Most-One Constraints
-              </a>
-            </h3>
-            <p class="pub-authors">
-              H. X. Truong, <span class="author-self">T. V. Kieu</span>, T. V. Khanh
-            </p>
-            <p class="pub-venue">
-              Proceedings of the 17th International Conference on Agents and Artificial Intelligence (ICAART), Vol. 2, pp. 164–175, SCITEPRESS, 2025.
-            </p>
-            <div class="pub-actions">
-              <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:d1gkVwhDpl0C" target="_blank" rel="noopener noreferrer" class="pub-action-btn">
-                <span>Scholar</span>
-              </a>
-              <button onclick="toggleAbstract('icaart2024')" class="pub-action-btn">Abstract</button>
-              <button onclick="toggleBibtex('icaart2024')" class="pub-action-btn">BibTeX</button>
-            </div>
-
-            <div class="drawer-container" id="abstract-icaart2024">
-              <div class="drawer-header">
-                <span>Abstract</span>
-                <button onclick="toggleAbstract('icaart2024')" class="close-drawer-btn">&times;</button>
-              </div>
-              <p class="drawer-content">
-                At-Most-One (AMO) constraints frequently appear in combinatorial optimization and planning. When consecutive sequences of constraints overlap in staircase topologies, direct pairwise encodings produce excessive clauses. We propose an innovative Sequential Counter encoding specifically tailored for Staircase AMO constraints that reduces clause counts by up to 40% while preserving unit propagation strength.
-              </p>
-            </div>
-
-            <div class="drawer-container" id="bibtex-icaart2024">
-              <div class="drawer-header">
-                <span>BibTeX</span>
-                <button onclick="copyBibtex('icaart2024')" class="copy-btn">Copy BibTeX</button>
-              </div>
-              <code class="bibtex-code" id="bibtex-code-icaart2024">@inproceedings{truong2025sequential,
+      <!-- Paper 4 (Highlighted) -->
+      <div class="paper-entry highlighted">
+        <a href="https://www.scitepress.org/Papers/2025/131718/" class="papertitle">Sequential Counter Encoding for Staircase At-Most-One Constraints</a>
+        <div class="paper-authors">
+          H. X. Truong, <strong>T. V. Kieu</strong>, T. V. Khanh
+        </div>
+        <div class="paper-venue">
+          Proceedings of the 17th International Conference on Agents and Artificial Intelligence (ICAART), Vol. 2, pp. 164–175, SCITEPRESS, 2025.
+        </div>
+        <div class="paper-links">
+          <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:d1gkVwhDpl0C">[scholar]</a> /
+          <a href="javascript:toggleBibtex('icaart2024')">[bibtex]</a>
+        </div>
+        <p class="paper-desc">
+          Introduces a specialized Sequential Counter encoding for staircase overlapping At-Most-One constraint topologies, reducing clause count by up to 40% while preserving unit propagation strength.
+        </p>
+        <pre class="bibtex-box" id="bibtex-icaart2024">@inproceedings{truong2025sequential,
   title={Sequential Counter Encoding for Staircase At-Most-One Constraints},
   author={Truong, Hieu Xuan and Kieu, Tuyen Van and To, Khanh Van},
   booktitle={Proceedings of the 17th International Conference on Agents and Artificial Intelligence (ICAART)},
@@ -717,1055 +183,326 @@
   pages={164--175},
   year={2025},
   publisher={SCITEPRESS}
-}</code>
-            </div>
-          </article>
+}</pre>
+      </div>
 
-          <!-- Paper 5: KSE Conference (2D Bin Packing) -->
-          <article class="pub-card" data-category="conference" data-selected="false" id="pub-kse-2025">
-            <div class="pub-meta-top">
-              <span class="badge badge-conf">Conference</span>
-              <span class="badge badge-first">First Author</span>
-              <span class="pub-year">2025</span>
-            </div>
-            <h3 class="pub-title">
-              <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:qjMakFHDy7sC" target="_blank" rel="noopener noreferrer">
-                SAT-Based Approaches for Two-Dimensional Bin Packing: A Comprehensive Comparison with MIP and CP Methods
-              </a>
-            </h3>
-            <p class="pub-authors">
-              <span class="author-self">T. V. Kieu</span>, C. L. Hoang, T. V. Khanh
-            </p>
-            <p class="pub-venue">
-              17th International Conference on Knowledge and Systems Engineering (KSE 2025), IEEE.
-            </p>
-            <div class="pub-actions">
-              <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:qjMakFHDy7sC" target="_blank" rel="noopener noreferrer" class="pub-action-btn">
-                <span>Scholar</span>
-              </a>
-              <button onclick="toggleAbstract('kse2025')" class="pub-action-btn">Abstract</button>
-              <button onclick="toggleBibtex('kse2025')" class="pub-action-btn">BibTeX</button>
-            </div>
+      <!-- Paper 5 -->
+      <div class="paper-entry">
+        <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:IjCSPb-OGe4C" class="papertitle">An Efficient SAT Encoding for Solving the Social Golfer Problem</a>
+        <div class="paper-authors">
+          <strong>T. V. Kieu</strong>, N. T. Nguyen, T. V. Khanh
+        </div>
+        <div class="paper-venue">
+          RAIRO - Operations Research, 2025.
+        </div>
+        <div class="paper-links">
+          <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:IjCSPb-OGe4C">[scholar]</a> /
+          <a href="javascript:toggleBibtex('golfer2025')">[bibtex]</a>
+        </div>
+        <p class="paper-desc">
+          Combines lexicographical symmetry-breaking constraints with compact cardinality formulations to solve the Social Golfer Problem (CSPLib prob027) efficiently.
+        </p>
+        <pre class="bibtex-box" id="bibtex-golfer2025">@article{kieu2025socialgolfer,
+  title={An Efficient SAT Encoding for Solving the Social Golfer Problem},
+  author={Kieu, Tuyen Van and Nguyen, Nhat Tan and To, Khanh Van},
+  journal={RAIRO - Operations Research},
+  year={2025}
+}</pre>
+      </div>
 
-            <div class="drawer-container" id="abstract-kse2025">
-              <div class="drawer-header">
-                <span>Abstract</span>
-                <button onclick="toggleAbstract('kse2025')" class="close-drawer-btn">&times;</button>
-              </div>
-              <p class="drawer-content">
-                We present an extensive empirical benchmark comparing modern SAT-based formulations for the 2D Bin Packing Problem against classic Mixed Integer Programming (MIP) with CPLEX/Gurobi and Constraint Programming (CP) with OR-Tools, demonstrating where SAT outperforms and establishes tighter bounds.
-              </p>
-            </div>
-
-            <div class="drawer-container" id="bibtex-kse2025">
-              <div class="drawer-header">
-                <span>BibTeX</span>
-                <button onclick="copyBibtex('kse2025')" class="copy-btn">Copy BibTeX</button>
-              </div>
-              <code class="bibtex-code" id="bibtex-code-kse2025">@inproceedings{kieu2025binpacking,
+      <!-- Paper 6 -->
+      <div class="paper-entry">
+        <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:qjMakFHDy7sC" class="papertitle">SAT-Based Approaches for Two-Dimensional Bin Packing: A Comprehensive Comparison with MIP and CP Methods</a>
+        <div class="paper-authors">
+          <strong>T. V. Kieu</strong>, C. L. Hoang, T. V. Khanh
+        </div>
+        <div class="paper-venue">
+          17th International Conference on Knowledge and Systems Engineering (KSE 2025), IEEE.
+        </div>
+        <div class="paper-links">
+          <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:qjMakFHDy7sC">[scholar]</a> /
+          <a href="javascript:toggleBibtex('kse2025')">[bibtex]</a>
+        </div>
+        <p class="paper-desc">
+          A systematic empirical study comparing modern SAT formulations for 2D Bin Packing against Mixed Integer Programming (MIP) and Constraint Programming (CP) solvers.
+        </p>
+        <pre class="bibtex-box" id="bibtex-kse2025">@inproceedings{kieu2025binpacking,
   title={SAT-Based Approaches for Two-Dimensional Bin Packing: A Comprehensive Comparison with MIP and CP Methods},
   author={Kieu, Tuyen Van and Hoang, Chi Linh and To, Khanh Van},
   booktitle={17th International Conference on Knowledge and Systems Engineering (KSE)},
   year={2025}
-}</code>
-            </div>
-          </article>
+}</pre>
+      </div>
 
-          <!-- Paper 6: ISCIT Conference (Nurse Rostering) -->
-          <article class="pub-card" data-category="conference" data-selected="false" id="pub-iscit-2025">
-            <div class="pub-meta-top">
-              <span class="badge badge-conf">Conference</span>
-              <span class="pub-year">2025</span>
-            </div>
-            <h3 class="pub-title">
-              <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:UeHWp8X0CEIC" target="_blank" rel="noopener noreferrer">
-                Solving At-Least Sequence Constraints in Nurse Rostering Problem Using SAT
-              </a>
-            </h3>
-            <p class="pub-authors">
-              T. V. Khanh, H. X. Truong, Q. H. Nguyen, N. X. Dao, <span class="author-self">T. V. Kieu</span>
-            </p>
-            <p class="pub-venue">
-              24th International Symposium on Communications and Information Technologies (ISCIT 2025), IEEE.
-            </p>
-            <div class="pub-actions">
-              <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:UeHWp8X0CEIC" target="_blank" rel="noopener noreferrer" class="pub-action-btn">
-                <span>Scholar</span>
-              </a>
-              <button onclick="toggleAbstract('iscit2025')" class="pub-action-btn">Abstract</button>
-              <button onclick="toggleBibtex('iscit2025')" class="pub-action-btn">BibTeX</button>
-            </div>
-
-            <div class="drawer-container" id="abstract-iscit2025">
-              <div class="drawer-header">
-                <span>Abstract</span>
-                <button onclick="toggleAbstract('iscit2025')" class="close-drawer-btn">&times;</button>
-              </div>
-              <p class="drawer-content">
-                Nurse Rostering involves intricate constraints on consecutive working shifts. We investigate SAT encodings for at-least sequence constraints and evaluate their effectiveness on benchmark hospital rosters.
-              </p>
-            </div>
-
-            <div class="drawer-container" id="bibtex-iscit2025">
-              <div class="drawer-header">
-                <span>BibTeX</span>
-                <button onclick="copyBibtex('iscit2025')" class="copy-btn">Copy BibTeX</button>
-              </div>
-              <code class="bibtex-code" id="bibtex-code-iscit2025">@inproceedings{to2025nurse,
+      <!-- Paper 7 -->
+      <div class="paper-entry">
+        <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:UeHWp8X0CEIC" class="papertitle">Solving At-Least Sequence Constraints in Nurse Rostering Problem Using SAT</a>
+        <div class="paper-authors">
+          T. V. Khanh, H. X. Truong, Q. H. Nguyen, N. X. Dao, <strong>T. V. Kieu</strong>
+        </div>
+        <div class="paper-venue">
+          24th International Symposium on Communications and Information Technologies (ISCIT 2025), IEEE.
+        </div>
+        <div class="paper-links">
+          <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:UeHWp8X0CEIC">[scholar]</a> /
+          <a href="javascript:toggleBibtex('iscit2025')">[bibtex]</a>
+        </div>
+        <p class="paper-desc">
+          Formulates at-least sequence constraints in hospital nurse rostering into SAT, proving faster solving times over traditional integer formulations.
+        </p>
+        <pre class="bibtex-box" id="bibtex-iscit2025">@inproceedings{to2025nurse,
   title={Solving At-Least Sequence Constraints in Nurse Rostering Problem Using SAT},
   author={To, Khanh Van and Truong, Hieu Xuan and Nguyen, Quang Hong and Dao, Ngoc Xuan and Kieu, Tuyen Van},
   booktitle={24th International Symposium on Communications and Information Technologies (ISCIT)},
   year={2025}
-}</code>
-            </div>
-          </article>
+}</pre>
+      </div>
 
-          <!-- Paper 7: arXiv (Train Rescheduling MaxSAT-DDD) -->
-          <article class="pub-card" data-category="preprint" data-selected="true" id="pub-train-rescheduling">
-            <div class="pub-meta-top">
-              <span class="badge badge-preprint">Preprint</span>
-              <span class="badge badge-first">First Author</span>
-              <span class="pub-year">2026</span>
-            </div>
-            <h3 class="pub-title">
-              <a href="https://arxiv.org/abs/2606.16814" target="_blank" rel="noopener noreferrer">
-                An Efficient MaxSAT-DDD Approach for Train Rescheduling via Precedence Propagation and Hybrid AMO Encodings
-              </a>
-            </h3>
-            <p class="pub-authors">
-              <span class="author-self">T. V. Kieu</span>, T. H. Nguyen, T. V. Khanh
-            </p>
-            <p class="pub-venue">
-              arXiv preprint arXiv:2606.16814 [cs.AI], 2026.
-            </p>
-            <div class="pub-actions">
-              <a href="https://arxiv.org/abs/2606.16814" target="_blank" rel="noopener noreferrer" class="pub-action-btn">
-                <span>arXiv:2606.16814</span>
-              </a>
-              <a href="https://github.com/kieuvantuyen01/maxsattrainscheduling" target="_blank" rel="noopener noreferrer" class="pub-action-btn">
-                <span>GitHub Code</span>
-              </a>
-              <button onclick="toggleAbstract('train2026')" class="pub-action-btn">Abstract</button>
-              <button onclick="toggleBibtex('train2026')" class="pub-action-btn">BibTeX</button>
-            </div>
-
-            <div class="drawer-container" id="abstract-train2026">
-              <div class="drawer-header">
-                <span>Abstract</span>
-                <button onclick="toggleAbstract('train2026')" class="close-drawer-btn">&times;</button>
-              </div>
-              <p class="drawer-content">
-                Real-time railway train rescheduling under unexpected disruptions requires computing delay-minimizing conflict-free schedules in seconds. We propose a MaxSAT-DDD (Disjunctive Delay Decision) formulation combined with precedence propagation and hybrid At-Most-One encodings that solves dense railway networks rapidly and reliably.
-              </p>
-            </div>
-
-            <div class="drawer-container" id="bibtex-train2026">
-              <div class="drawer-header">
-                <span>BibTeX</span>
-                <button onclick="copyBibtex('train2026')" class="copy-btn">Copy BibTeX</button>
-              </div>
-              <code class="bibtex-code" id="bibtex-code-train2026">@article{kieu2026train,
-  title={An Efficient MaxSAT-DDD Approach for Train Rescheduling via Precedence Propagation and Hybrid AMO Encodings},
-  author={Kieu, Tuyen Van and Nguyen, Tien Hieu and To, Khanh Van},
-  journal={arXiv preprint arXiv:2606.16814},
-  year={2026}
-}</code>
-            </div>
-          </article>
-
-          <!-- Paper 8: arXiv / JCO (Power Peak Minimization) -->
-          <article class="pub-card" data-category="journal" data-selected="false" id="pub-power-peak">
-            <div class="pub-meta-top">
-              <span class="badge badge-journal">Under Review</span>
-              <span class="badge badge-first">First Author</span>
-              <span class="pub-year">2025</span>
-            </div>
-            <h3 class="pub-title">
-              <a href="https://arxiv.org/abs/2512.11435" target="_blank" rel="noopener noreferrer">
-                Compact SAT Encoding for Power Peak Minimization
-              </a>
-            </h3>
-            <p class="pub-authors">
-              <span class="author-self">T. V. Kieu</span>, P. C. Nguyen, B. G. Hoang, T. V. Khanh
-            </p>
-            <p class="pub-venue">
-              arXiv:2512.11435 [cs.AI] &bull; Under review at Journal of Combinatorial Optimization.
-            </p>
-            <div class="pub-actions">
-              <a href="https://arxiv.org/abs/2512.11435" target="_blank" rel="noopener noreferrer" class="pub-action-btn">
-                <span>arXiv:2512.11435</span>
-              </a>
-              <button onclick="toggleAbstract('power2025')" class="pub-action-btn">Abstract</button>
-              <button onclick="toggleBibtex('power2025')" class="pub-action-btn">BibTeX</button>
-            </div>
-
-            <div class="drawer-container" id="abstract-power2025">
-              <div class="drawer-header">
-                <span>Abstract</span>
-                <button onclick="toggleAbstract('power2025')" class="close-drawer-btn">&times;</button>
-              </div>
-              <p class="drawer-content">
-                Minimizing peak electricity consumption in manufacturing schedules prevents costly grid surcharges. We propose compact SAT encodings for non-linear power aggregation constraints, enabling exact resolution of larger instances than previous integer programming formulations.
-              </p>
-            </div>
-
-            <div class="drawer-container" id="bibtex-power2025">
-              <div class="drawer-header">
-                <span>BibTeX</span>
-                <button onclick="copyBibtex('power2025')" class="copy-btn">Copy BibTeX</button>
-              </div>
-              <code class="bibtex-code" id="bibtex-code-power2025">@article{kieu2025powerpeak,
+      <!-- Paper 8 -->
+      <div class="paper-entry">
+        <a href="https://arxiv.org/abs/2512.11435" class="papertitle">Compact SAT Encoding for Power Peak Minimization</a>
+        <div class="paper-authors">
+          <strong>T. V. Kieu</strong>, P. C. Nguyen, B. G. Hoang, T. V. Khanh
+        </div>
+        <div class="paper-venue">
+          arXiv preprint arXiv:2512.11435 [cs.AI], 2025 (under review at Journal of Combinatorial Optimization).
+        </div>
+        <div class="paper-links">
+          <a href="https://arxiv.org/abs/2512.11435">[arXiv]</a> /
+          <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:zYLM7Y9cAGgC">[scholar]</a> /
+          <a href="javascript:toggleBibtex('power2025')">[bibtex]</a>
+        </div>
+        <p class="paper-desc">
+          Compact SAT encodings for non-linear power peak minimization in manufacturing schedules, achieving exact solutions on larger benchmarks than previous mathematical programs.
+        </p>
+        <pre class="bibtex-box" id="bibtex-power2025">@article{kieu2025powerpeak,
   title={Compact SAT Encoding for Power Peak Minimization},
   author={Kieu, Tuyen Van and Nguyen, Phuong Chi and Hoang, Ba Giap and To, Khanh Van},
   journal={arXiv preprint arXiv:2512.11435},
   year={2025}
-}</code>
-            </div>
-          </article>
+}</pre>
+      </div>
 
-          <!-- Paper 9: arXiv (Assembly Line SALBP) -->
-          <article class="pub-card" data-category="preprint" data-selected="false" id="pub-salbp">
-            <div class="pub-meta-top">
-              <span class="badge badge-preprint">Preprint</span>
-              <span class="pub-year">2026</span>
-            </div>
-            <h3 class="pub-title">
-              <a href="https://arxiv.org/abs/2608.24779" target="_blank" rel="noopener noreferrer">
-                Cycle Time Minimization for the Simple Assembly Line Balancing Problem Under Peak Power Constraints
-              </a>
-            </h3>
-            <p class="pub-authors">
-              B. G. Hoang, <span class="author-self">T. V. Kieu</span>, T. V. Khanh
-            </p>
-            <p class="pub-venue">
-              arXiv preprint arXiv:2608.24779 [cs.AI], 2026.
-            </p>
-            <div class="pub-actions">
-              <a href="https://arxiv.org/abs/2608.24779" target="_blank" rel="noopener noreferrer" class="pub-action-btn">
-                <span>arXiv:2608.24779</span>
-              </a>
-              <button onclick="toggleAbstract('salbp2026')" class="pub-action-btn">Abstract</button>
-              <button onclick="toggleBibtex('salbp2026')" class="pub-action-btn">BibTeX</button>
-            </div>
-
-            <div class="drawer-container" id="abstract-salbp2026">
-              <div class="drawer-header">
-                <span>Abstract</span>
-                <button onclick="toggleAbstract('salbp2026')" class="close-drawer-btn">&times;</button>
-              </div>
-              <p class="drawer-content">
-                We study SALBP under peak power constraints, formulating the dual objective of minimizing cycle time while maintaining station power thresholds within prescribed limits.
-              </p>
-            </div>
-
-            <div class="drawer-container" id="bibtex-salbp2026">
-              <div class="drawer-header">
-                <span>BibTeX</span>
-                <button onclick="copyBibtex('salbp2026')" class="copy-btn">Copy BibTeX</button>
-              </div>
-              <code class="bibtex-code" id="bibtex-code-salbp2026">@article{hoang2026assembly,
+      <!-- Paper 9 -->
+      <div class="paper-entry">
+        <a href="https://arxiv.org/abs/2608.24779" class="papertitle">Cycle Time Minimization for the Simple Assembly Line Balancing Problem Under Peak Power Constraints</a>
+        <div class="paper-authors">
+          B. G. Hoang, <strong>T. V. Kieu</strong>, T. V. Khanh
+        </div>
+        <div class="paper-venue">
+          arXiv preprint arXiv:2608.24779 [cs.AI], 2026.
+        </div>
+        <div class="paper-links">
+          <a href="https://arxiv.org/abs/2608.24779">[arXiv]</a> /
+          <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:WF5omc3nYNoC">[scholar]</a> /
+          <a href="javascript:toggleBibtex('salbp2026')">[bibtex]</a>
+        </div>
+        <p class="paper-desc">
+          Addresses simple assembly line balancing (SALBP) subject to station peak power limits, minimizing cycle time via exact discrete modeling.
+        </p>
+        <pre class="bibtex-box" id="bibtex-salbp2026">@article{hoang2026assembly,
   title={Cycle Time Minimization for the Simple Assembly Line Balancing Problem Under Peak Power Constraints},
   author={Hoang, Ba Giap and Kieu, Tuyen Van and To, Khanh Van},
   journal={arXiv preprint arXiv:2608.24779},
   year={2026}
-}</code>
-            </div>
-          </article>
+}</pre>
+      </div>
 
-          <!-- Paper 10: arXiv (B2B Meeting Scheduling) -->
-          <article class="pub-card" data-category="preprint" data-selected="false" id="pub-b2b-meetings">
-            <div class="pub-meta-top">
-              <span class="badge badge-preprint">Preprint</span>
-              <span class="pub-year">2026</span>
-            </div>
-            <h3 class="pub-title">
-              <a href="https://arxiv.org/abs/2608.00614" target="_blank" rel="noopener noreferrer">
-                Compact SAT and MaxSAT Encodings for Business-to-Business Meeting Scheduling with Idle-Time Balancing
-              </a>
-            </h3>
-            <p class="pub-authors">
-              L. D. Nguyen, <span class="author-self">T. V. Kieu</span>, T. V. Khanh
-            </p>
-            <p class="pub-venue">
-              arXiv preprint arXiv:2608.00614 [cs.AI], 2026.
-            </p>
-            <div class="pub-actions">
-              <a href="https://arxiv.org/abs/2608.00614" target="_blank" rel="noopener noreferrer" class="pub-action-btn">
-                <span>arXiv:2608.00614</span>
-              </a>
-              <button onclick="toggleAbstract('b2b2026')" class="pub-action-btn">Abstract</button>
-              <button onclick="toggleBibtex('b2b2026')" class="pub-action-btn">BibTeX</button>
-            </div>
-
-            <div class="drawer-container" id="abstract-b2b2026">
-              <div class="drawer-header">
-                <span>Abstract</span>
-                <button onclick="toggleAbstract('b2b2026')" class="close-drawer-btn">&times;</button>
-              </div>
-              <p class="drawer-content">
-                B2B networking events require scheduling bilateral meetings without overlaps while balancing idle waiting times across participants. We formulate this problem using PySAT and RC2, solving real instances efficiently.
-              </p>
-            </div>
-
-            <div class="drawer-container" id="bibtex-b2b2026">
-              <div class="drawer-header">
-                <span>BibTeX</span>
-                <button onclick="copyBibtex('b2b2026')" class="copy-btn">Copy BibTeX</button>
-              </div>
-              <code class="bibtex-code" id="bibtex-code-b2b2026">@article{nguyen2026meeting,
+      <!-- Paper 10 -->
+      <div class="paper-entry">
+        <a href="https://arxiv.org/abs/2608.00614" class="papertitle">Compact SAT and MaxSAT Encodings for Business-to-Business Meeting Scheduling with Idle-Time Balancing</a>
+        <div class="paper-authors">
+          L. D. Nguyen, <strong>T. V. Kieu</strong>, T. V. Khanh
+        </div>
+        <div class="paper-venue">
+          arXiv preprint arXiv:2608.00614 [cs.AI], 2026.
+        </div>
+        <div class="paper-links">
+          <a href="https://arxiv.org/abs/2608.00614">[arXiv]</a> /
+          <a href="https://github.com/kieuvantuyen01/Business-Meeting-Scheduling-Problem">[code]</a> /
+          <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:eQOLeE2rZwMC">[scholar]</a> /
+          <a href="javascript:toggleBibtex('b2b2026')">[bibtex]</a>
+        </div>
+        <p class="paper-desc">
+          Formulates B2B meeting scheduling with idle waiting time balance using PySAT and RC2 MaxSAT solvers.
+        </p>
+        <pre class="bibtex-box" id="bibtex-b2b2026">@article{nguyen2026meeting,
   title={Compact SAT and MaxSAT Encodings for Business-to-Business Meeting Scheduling with Idle-Time Balancing},
   author={Nguyen, Luong Duy and Kieu, Tuyen Van and To, Khanh Van},
   journal={arXiv preprint arXiv:2608.00614},
   year={2026}
-}</code>
-            </div>
-          </article>
+}</pre>
+      </div>
 
-          <!-- Paper 11: arXiv (Cutting Stock) -->
-          <article class="pub-card" data-category="preprint" data-selected="false" id="pub-cutting-stock">
-            <div class="pub-meta-top">
-              <span class="badge badge-preprint">Preprint</span>
-              <span class="badge badge-first">First Author</span>
-              <span class="pub-year">2026</span>
-            </div>
-            <h3 class="pub-title">
-              <a href="https://arxiv.org/abs/2604.01732" target="_blank" rel="noopener noreferrer">
-                Solving the Two-dimensional Single Stock Size Cutting Stock Problem with SAT and MaxSAT
-              </a>
-            </h3>
-            <p class="pub-authors">
-              <span class="author-self">T. V. Kieu</span>, C. L. Hoang, T. V. Khanh
-            </p>
-            <p class="pub-venue">
-              arXiv preprint arXiv:2604.01732 [cs.AI], 2026.
-            </p>
-            <div class="pub-actions">
-              <a href="https://arxiv.org/abs/2604.01732" target="_blank" rel="noopener noreferrer" class="pub-action-btn">
-                <span>arXiv:2604.01732</span>
-              </a>
-              <button onclick="toggleAbstract('cutting2026')" class="pub-action-btn">Abstract</button>
-              <button onclick="toggleBibtex('cutting2026')" class="pub-action-btn">BibTeX</button>
-            </div>
-
-            <div class="drawer-container" id="abstract-cutting2026">
-              <div class="drawer-header">
-                <span>Abstract</span>
-                <button onclick="toggleAbstract('cutting2026')" class="close-drawer-btn">&times;</button>
-              </div>
-              <p class="drawer-content">
-                We formulate the 2D Single Stock Size Cutting Stock Problem using exact SAT and MaxSAT models, comparing pattern-generation and direct placement methods to minimize material waste.
-              </p>
-            </div>
-
-            <div class="drawer-container" id="bibtex-cutting2026">
-              <div class="drawer-header">
-                <span>BibTeX</span>
-                <button onclick="copyBibtex('cutting2026')" class="copy-btn">Copy BibTeX</button>
-              </div>
-              <code class="bibtex-code" id="bibtex-code-cutting2026">@article{kieu2026cutting,
+      <!-- Paper 11 -->
+      <div class="paper-entry">
+        <a href="https://arxiv.org/abs/2604.01732" class="papertitle">Solving the Two-Dimensional Single Stock Size Cutting Stock Problem with SAT and MaxSAT</a>
+        <div class="paper-authors">
+          <strong>T. V. Kieu</strong>, C. L. Hoang, T. V. Khanh
+        </div>
+        <div class="paper-venue">
+          arXiv preprint arXiv:2604.01732 [cs.AI], 2026.
+        </div>
+        <div class="paper-links">
+          <a href="https://arxiv.org/abs/2604.01732">[arXiv]</a> /
+          <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:Y0pCki6q_DkC">[scholar]</a> /
+          <a href="javascript:toggleBibtex('cutting2026')">[bibtex]</a>
+        </div>
+        <p class="paper-desc">
+          Applies SAT and MaxSAT techniques to the 2D single stock cutting stock problem, comparing pattern generation vs. direct placement models.
+        </p>
+        <pre class="bibtex-box" id="bibtex-cutting2026">@article{kieu2026cutting,
   title={Solving the Two-dimensional single stock size Cutting Stock Problem with SAT and MaxSAT},
   author={Kieu, Tuyen Van and Hoang, Chi Linh and To, Khanh Van},
   journal={arXiv preprint arXiv:2604.01732},
   year={2026}
-}</code>
-            </div>
-          </article>
+}</pre>
+      </div>
 
-          <!-- Paper 12: arXiv (Bandwidth Coloring) -->
-          <article class="pub-card" data-category="preprint" data-selected="false" id="pub-bandwidth-coloring">
-            <div class="pub-meta-top">
-              <span class="badge badge-preprint">Preprint</span>
-              <span class="pub-year">2026</span>
-            </div>
-            <h3 class="pub-title">
-              <a href="https://arxiv.org/abs/2602.08423" target="_blank" rel="noopener noreferrer">
-                SAT Encodings for Bandwidth Coloring: A Systematic Design Study
-              </a>
-            </h3>
-            <p class="pub-authors">
-              D. T. K. Nguyen, <span class="author-self">T. V. Kieu</span>, T. V. Khanh
-            </p>
-            <p class="pub-venue">
-              arXiv preprint arXiv:2602.08423 [cs.AI], 2026.
-            </p>
-            <div class="pub-actions">
-              <a href="https://arxiv.org/abs/2602.08423" target="_blank" rel="noopener noreferrer" class="pub-action-btn">
-                <span>arXiv:2602.08423</span>
-              </a>
-              <a href="https://github.com/kieuvantuyen01/lpr-bcp" target="_blank" rel="noopener noreferrer" class="pub-action-btn">
-                <span>Code</span>
-              </a>
-              <button onclick="toggleAbstract('bcp2026')" class="pub-action-btn">Abstract</button>
-              <button onclick="toggleBibtex('bcp2026')" class="pub-action-btn">BibTeX</button>
-            </div>
-
-            <div class="drawer-container" id="abstract-bcp2026">
-              <div class="drawer-header">
-                <span>Abstract</span>
-                <button onclick="toggleAbstract('bcp2026')" class="close-drawer-btn">&times;</button>
-              </div>
-              <p class="drawer-content">
-                A systematic study of SAT encodings for the Bandwidth Coloring Problem (BCP). We analyze direct, order, and log encodings, revealing trade-offs between formula size and propagation efficiency.
-              </p>
-            </div>
-
-            <div class="drawer-container" id="bibtex-bcp2026">
-              <div class="drawer-header">
-                <span>BibTeX</span>
-                <button onclick="copyBibtex('bcp2026')" class="copy-btn">Copy BibTeX</button>
-              </div>
-              <code class="bibtex-code" id="bibtex-code-bcp2026">@article{nguyen2026bandwidth,
+      <!-- Paper 12 -->
+      <div class="paper-entry">
+        <a href="https://arxiv.org/abs/2602.08423" class="papertitle">SAT Encodings for Bandwidth Coloring: A Systematic Design Study</a>
+        <div class="paper-authors">
+          D. T. K. Nguyen, <strong>T. V. Kieu</strong>, T. V. Khanh
+        </div>
+        <div class="paper-venue">
+          arXiv preprint arXiv:2602.08423 [cs.AI], 2026.
+        </div>
+        <div class="paper-links">
+          <a href="https://arxiv.org/abs/2602.08423">[arXiv]</a> /
+          <a href="https://github.com/kieuvantuyen01/lpr-bcp">[code]</a> /
+          <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:Tyk-4Ss8FVUC">[scholar]</a> /
+          <a href="javascript:toggleBibtex('bcp2026')">[bibtex]</a>
+        </div>
+        <p class="paper-desc">
+          Systematically investigates direct, order, and log encodings for the Bandwidth Coloring Problem, analyzing propagation efficiency trade-offs.
+        </p>
+        <pre class="bibtex-box" id="bibtex-bcp2026">@article{nguyen2026bandwidth,
   title={SAT Encodings for Bandwidth Coloring: A Systematic Design Study},
   author={Nguyen, Dang Tuan Kiet and Kieu, Tuyen Van and To, Khanh Van},
   journal={arXiv preprint arXiv:2602.08423},
   year={2026}
-}</code>
-            </div>
-          </article>
+}</pre>
+      </div>
 
-          <!-- Paper 13: Constraints Journal (Ladder Shape Cardinality) -->
-          <article class="pub-card" data-category="journal" data-selected="false" id="pub-constraints-ladder">
-            <div class="pub-meta-top">
-              <span class="badge badge-journal">Under Review</span>
-              <span class="pub-year">2025</span>
-            </div>
-            <h3 class="pub-title">
-              SAT Encoding for Set of At-Most-K Cardinality Constraints with Ladder Shape
-            </h3>
-            <p class="pub-authors">
-              H. T. Xuan, <span class="author-self">T. V. Kieu</span>, T. V. Khanh
-            </p>
-            <p class="pub-venue">
-              Constraints (Springer), Under Review, 2025.
-            </p>
-            <div class="pub-actions">
-              <button onclick="toggleAbstract('ladder2025')" class="pub-action-btn">Abstract</button>
-              <button onclick="toggleBibtex('ladder2025')" class="pub-action-btn">BibTeX</button>
-            </div>
-
-            <div class="drawer-container" id="abstract-ladder2025">
-              <div class="drawer-header">
-                <span>Abstract</span>
-                <button onclick="toggleAbstract('ladder2025')" class="close-drawer-btn">&times;</button>
-              </div>
-              <p class="drawer-content">
-                We generalize sequential counter techniques to handle structured sets of At-Most-K cardinality constraints arranged in ladder configurations, substantially reducing auxiliary variable counts.
-              </p>
-            </div>
-
-            <div class="drawer-container" id="bibtex-ladder2025">
-              <div class="drawer-header">
-                <span>BibTeX</span>
-                <button onclick="copyBibtex('ladder2025')" class="copy-btn">Copy BibTeX</button>
-              </div>
-              <code class="bibtex-code" id="bibtex-code-ladder2025">@article{xuan2025cardinality,
+      <!-- Paper 13 -->
+      <div class="paper-entry">
+        <span class="papertitle">SAT Encoding for Set of At-Most-K Cardinality Constraints with Ladder Shape</span>
+        <div class="paper-authors">
+          H. T. Xuan, <strong>T. V. Kieu</strong>, T. V. Khanh
+        </div>
+        <div class="paper-venue">
+          Constraints (Springer), under review, 2025.
+        </div>
+        <div class="paper-links">
+          <a href="javascript:toggleBibtex('ladder2025')">[bibtex]</a>
+        </div>
+        <p class="paper-desc">
+          Extends sequential counter encodings to structured ladder-shaped At-Most-K constraints, minimizing auxiliary variables.
+        </p>
+        <pre class="bibtex-box" id="bibtex-ladder2025">@article{xuan2025cardinality,
   title={SAT Encoding for Set of At-Most-K Cardinality Constraints with Ladder Shape},
   author={Xuan, Hieu Truong and Kieu, Tuyen Van and To, Khanh Van},
   journal={Constraints},
   year={2025},
   note={Under review}
-}</code>
-            </div>
-          </article>
+}</pre>
+      </div>
 
-          <!-- Paper 14: Master's Thesis -->
-          <article class="pub-card" data-category="thesis" data-selected="true" id="pub-msc-thesis">
-            <div class="pub-meta-top">
-              <span class="badge badge-thesis">Master's Thesis</span>
-              <span class="badge badge-first">First Author</span>
-              <span class="pub-year">2025</span>
-            </div>
-            <h3 class="pub-title">
-              Optimal SAT Encoding Methods for Combinatorial Optimization and Scheduling Problems
-              <div style="font-size: 0.95rem; font-weight: 500; color: var(--text-muted); margin-top: 0.2rem;">
-                (Biểu diễn SAT tối ưu cho các bài toán tối ưu hoá tổ hợp)
-              </div>
-            </h3>
-            <p class="pub-authors">
-              <span class="author-self">Kieu Van Tuyen</span> &bull; Supervisor: <strong>Dr. To Van Khanh</strong>
-            </p>
-            <p class="pub-venue">
-              VNU University of Engineering and Technology (VNU-UET), December 2025. <strong>Score: 9.8 / 10.0 (Highest Honor)</strong>.
-            </p>
-            <div class="pub-actions">
-              <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:YsMSGLbcyi4C" target="_blank" rel="noopener noreferrer" class="pub-action-btn">
-                <span>Scholar Record</span>
-              </a>
-              <button onclick="toggleAbstract('thesis2025')" class="pub-action-btn">Abstract</button>
-              <button onclick="toggleBibtex('thesis2025')" class="pub-action-btn">BibTeX</button>
-            </div>
-
-            <div class="drawer-container" id="abstract-thesis2025">
-              <div class="drawer-header">
-                <span>Abstract</span>
-                <button onclick="toggleAbstract('thesis2025')" class="close-drawer-btn">&times;</button>
-              </div>
-              <p class="drawer-content">
-                This monograph synthesizes comprehensive investigations into compact SAT encodings for NP-hard combinatorial optimization. It covers theoretical foundations of clause reductions, unit propagation preservation, symmetry breaking, and empirical validations on 2D packing, task scheduling, train rescheduling, and cardinality constraints. Defended with a record 9.8/10 at VNU-UET.
-              </p>
-            </div>
-
-            <div class="drawer-container" id="bibtex-thesis2025">
-              <div class="drawer-header">
-                <span>BibTeX</span>
-                <button onclick="copyBibtex('thesis2025')" class="copy-btn">Copy BibTeX</button>
-              </div>
-              <code class="bibtex-code" id="bibtex-code-thesis2025">@mastersthesis{kieu2025thesis,
+      <!-- Paper 14 (Thesis) -->
+      <div class="paper-entry">
+        <span class="papertitle">Optimal SAT Encoding Methods for Combinatorial Optimization and Scheduling Problems</span>
+        <div class="paper-authors">
+          <strong>Kieu Van Tuyen</strong> (Supervisor: Dr. To Van Khanh)
+        </div>
+        <div class="paper-venue">
+          Master's Thesis, VNU University of Engineering and Technology, December 2025. Score: <strong>9.8 / 10.0 (Highest Honor)</strong>.
+        </div>
+        <div class="paper-links">
+          <a href="https://scholar.google.com/citations?view_op=view_citation&user=Zq72t0wAAAAJ&citation_for_view=Zq72t0wAAAAJ:YsMSGLbcyi4C">[scholar]</a> /
+          <a href="javascript:toggleBibtex('thesis2025')">[bibtex]</a>
+        </div>
+        <p class="paper-desc">
+          Monograph synthesizing compact SAT encoding methodologies, clause minimization theory, and experimental validation across scheduling and packing benchmarks.
+        </p>
+        <pre class="bibtex-box" id="bibtex-thesis2025">@mastersthesis{kieu2025thesis,
   title={Optimal SAT Encoding Methods for Combinatorial Optimization and Scheduling Problems},
   author={Kieu, Tuyen Van},
   school={VNU University of Engineering and Technology, Hanoi, Vietnam},
   year={2025},
   note={Supervisor: Dr. To Van Khanh}
-}</code>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- Open Source & Research Software Section -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Code & Reproducibility</span>
-          <h2 class="section-title">Open Source Solvers & Tools</h2>
-          <p class="section-subtitle">Reproducible research code, experimental benchmarks, and solvers hosted on GitHub.</p>
-        </div>
-
-        <div class="projects-grid">
-          <!-- Project 1 -->
-          <div class="project-card">
-            <div>
-              <div class="project-header">
-                <div class="project-icon">🚆</div>
-                <div class="project-links">
-                  <a href="https://github.com/kieuvantuyen01/maxsattrainscheduling" target="_blank" rel="noopener noreferrer" class="icon-btn" title="View Source">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <h3 class="project-title">maxsattrainscheduling</h3>
-              <p class="project-desc">
-                High-performance Rust implementation of the MaxSAT-DDD approach for real-time railway train rescheduling via precedence propagation and hybrid AMO encodings.
-              </p>
-            </div>
-            <div class="project-footer">
-              <div class="project-tech">
-                <span class="tech-tag">Rust</span>
-                <span class="tech-tag">MaxSAT</span>
-                <span class="tech-tag">Operations Research</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="project-card">
-            <div>
-              <div class="project-header">
-                <div class="project-icon">🔄</div>
-                <div class="project-links">
-                  <a href="https://github.com/kieuvantuyen01/HCP-CEGAR" target="_blank" rel="noopener noreferrer" class="icon-btn" title="View Source">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <h3 class="project-title">HCP-CEGAR</h3>
-              <p class="project-desc">
-                Enhanced SAT-based Counterexample-Guided Abstraction Refinement (CEGAR) solver for the Hamiltonian Cycle Problem with reproducible ablation benchmarks.
-              </p>
-            </div>
-            <div class="project-footer">
-              <div class="project-tech">
-                <span class="tech-tag">Rust</span>
-                <span class="tech-tag">CEGAR</span>
-                <span class="tech-tag">Graph Algorithms</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="project-card">
-            <div>
-              <div class="project-header">
-                <div class="project-icon">🎨</div>
-                <div class="project-links">
-                  <a href="https://github.com/kieuvantuyen01/lpr-bcp" target="_blank" rel="noopener noreferrer" class="icon-btn" title="View Source">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <h3 class="project-title">lpr-bcp</h3>
-              <p class="project-desc">
-                Reproducible C++ revision of the official LPR code for the Bandwidth Coloring Problem, exploring SAT order encodings vs. integer programming.
-              </p>
-            </div>
-            <div class="project-footer">
-              <div class="project-tech">
-                <span class="tech-tag">C++</span>
-                <span class="tech-tag">CaDiCaL</span>
-                <span class="tech-tag">Graph Coloring</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 4 -->
-          <div class="project-card">
-            <div>
-              <div class="project-header">
-                <div class="project-icon">🤝</div>
-                <div class="project-links">
-                  <a href="https://github.com/kieuvantuyen01/Business-Meeting-Scheduling-Problem" target="_blank" rel="noopener noreferrer" class="icon-btn" title="View Source">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <h3 class="project-title">B2B-Meeting-Scheduler</h3>
-              <p class="project-desc">
-                Solving the Business-to-Business Meeting Scheduling Problem using PySAT and RC2 with idle-time balancing objectives.
-              </p>
-            </div>
-            <div class="project-footer">
-              <div class="project-tech">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">PySAT</span>
-                <span class="tech-tag">MaxSAT</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 5 -->
-          <div class="project-card">
-            <div>
-              <div class="project-header">
-                <div class="project-icon">🌍</div>
-                <div class="project-links">
-                  <a href="https://github.com/kieuvantuyen01/tomorrow_world" target="_blank" rel="noopener noreferrer" class="icon-btn" title="View Source">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <h3 class="project-title">Tomorrow World (Award Winner)</h3>
-              <p class="project-desc">
-                Cloud-native social platform connecting environmental communities. Won the <strong>Best Technicality Prize</strong> at AWS Build On Vietnam 2022.
-              </p>
-            </div>
-            <div class="project-footer">
-              <div class="project-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">AWS DynamoDB</span>
-                <span class="tech-tag">S3</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 6 -->
-          <div class="project-card">
-            <div>
-              <div class="project-header">
-                <div class="project-icon">📱</div>
-                <div class="project-links">
-                  <a href="https://github.com/kieuvantuyen01/cvconnect" target="_blank" rel="noopener noreferrer" class="icon-btn" title="View Source">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <h3 class="project-title">Cv Connect (Hackathon Award)</h3>
-              <p class="project-desc">
-                Cross-platform mobile application monitoring and supporting post-Covid-19 rehabilitation. Won <strong>VNG's Voting Award</strong> in UET Hackathon 2022.
-              </p>
-            </div>
-            <div class="project-footer">
-              <div class="project-tech">
-                <span class="tech-tag">Flutter</span>
-                <span class="tech-tag">Firebase</span>
-                <span class="tech-tag">Mobile Health</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- Education & Experience Dual Section -->
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="dual-col-grid">
-          <!-- Education Column -->
-          <div>
-            <div class="section-header" style="margin-bottom: 2rem;">
-              <span class="section-tag">Academic Background</span>
-              <h2 class="section-title">Education</h2>
-            </div>
-
-            <div class="timeline-block">
-              <!-- Master -->
-              <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-time">Nov 2023 – Dec 2025</div>
-                <h3 class="timeline-role">Master of Science in Computer Science</h3>
-                <div class="timeline-org">VNU University of Engineering and Technology (VNU-UET), Hanoi</div>
-                <div class="timeline-desc">
-                  <div><strong>GPA: 3.92 / 4.00</strong> &bull; Highest Academic Honor</div>
-                  <div>Thesis: <em>Optimal SAT Encoding Methods for Combinatorial Optimization and Scheduling Problems</em></div>
-                  <div>Thesis Defense Score: <strong>9.8 / 10.0</strong></div>
-                  <div>Supervisor: <strong>Dr. To Van Khanh</strong></div>
-                </div>
-              </div>
-
-              <!-- Bachelor -->
-              <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-time">Aug 2019 – Jun 2023</div>
-                <h3 class="timeline-role">Bachelor of Science in Computer Science</h3>
-                <div class="timeline-org">VNU University of Engineering and Technology (VNU-UET), Hanoi</div>
-                <div class="timeline-desc">
-                  <div><strong>GPA: 3.83 / 4.00</strong> &bull; High Distinction</div>
-                  <div>Thesis: <em>Verification of Multithreaded Programs based on Symbolic Execution</em></div>
-                  <div>Thesis Defense Score: <strong>9.5 / 10.0</strong> (Excellent Thesis Award of the Council)</div>
-                  <div>Supervisor: <strong>Dr. To Van Khanh</strong></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Experience Column -->
-          <div>
-            <div class="section-header" style="margin-bottom: 2rem;">
-              <span class="section-tag">Career & Leadership</span>
-              <h2 class="section-title">Experience</h2>
-            </div>
-
-            <div class="timeline-block">
-              <!-- RA -->
-              <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-time">Nov 2023 – Dec 2025</div>
-                <h3 class="timeline-role">Graduate Research Assistant</h3>
-                <div class="timeline-org">Laboratory of Embedded Systems, VNU-UET</div>
-                <div class="timeline-desc">
-                  <ul>
-                    <li>Conducted cutting-edge research on SAT/MaxSAT formulations for scheduling, strip packing, and cardinality constraints.</li>
-                    <li>Published 6 international peer-reviewed papers (4 as first author).</li>
-                    <li>Mentored undergraduate students on optimization algorithms and PySAT modeling.</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- TA -->
-              <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-time">Aug 2023 – Present</div>
-                <h3 class="timeline-role">Teaching Assistant</h3>
-                <div class="timeline-org">Faculty of Information Technology, VNU-UET</div>
-                <div class="timeline-desc">
-                  <ul>
-                    <li>Courses: <strong>Object-Oriented Programming (OOP)</strong>, <strong>Fundamental Informatics</strong>, and <strong>Object-Oriented Analysis & Design (OOAD)</strong>.</li>
-                    <li>Delivered lab lectures, graded coding assignments, and guided student group software projects.</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Industry -->
-              <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-time">May 2022 – Jun 2023</div>
-                <h3 class="timeline-role">Software Developer (OJT)</h3>
-                <div class="timeline-org">Toshiba Software Development (Vietnam) Co., Ltd. (TSDV)</div>
-                <div class="timeline-desc">
-                  <ul>
-                    <li>Maintained and optimized Japanese automated paper typesetting systems using Java and C/C++.</li>
-                    <li>Built user interfaces for the Student Transportation Tracking System (ADSS) in an Agile workflow.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- Honors & Awards Section -->
-    <section class="section" id="awards">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Recognition & Achievements</span>
-          <h2 class="section-title">Honors & Awards</h2>
-          <p class="section-subtitle">Academic fellowships, innovation competitions, and national student merit awards.</p>
-        </div>
-
-        <div class="awards-grid">
-          <div class="award-card">
-            <div class="award-icon-box">🏆</div>
-            <div class="award-details">
-              <h3 class="award-name">Student of 5 Goods (Sinh viên 5 tốt)</h3>
-              <div class="award-issuer">Hanoi City & Vietnam National University (VNU) Level</div>
-              <div class="award-year">2021 &bull; 2022</div>
-            </div>
-          </div>
-
-          <div class="award-card">
-            <div class="award-icon-box">🥇</div>
-            <div class="award-details">
-              <h3 class="award-name">Best Technicality Prize</h3>
-              <div class="award-issuer">AWS Build On Vietnam 2022 (Project: Tomorrow World)</div>
-              <div class="award-year">2022</div>
-            </div>
-          </div>
-
-          <div class="award-card">
-            <div class="award-icon-box">🥈</div>
-            <div class="award-details">
-              <h3 class="award-name">Runner-Up, Ideathon Track</h3>
-              <div class="award-issuer">EOS Network Foundation International Contest</div>
-              <div class="award-year">2022</div>
-            </div>
-          </div>
-
-          <div class="award-card">
-            <div class="award-icon-box">🥈</div>
-            <div class="award-details">
-              <h3 class="award-name">Second Prize, VYTEC'21</h3>
-              <div class="award-issuer">Innovative Technology Ideas Contest</div>
-              <div class="award-year">2022</div>
-            </div>
-          </div>
-
-          <div class="award-card">
-            <div class="award-icon-box">🎖️</div>
-            <div class="award-details">
-              <h3 class="award-name">VNG's Voting Award</h3>
-              <div class="award-issuer">Hackathon Open 2022 (Project: CvConnect)</div>
-              <div class="award-year">2022</div>
-            </div>
-          </div>
-
-          <div class="award-card">
-            <div class="award-icon-box">🎓</div>
-            <div class="award-details">
-              <h3 class="award-name">Academic Excellence Scholarships</h3>
-              <div class="award-issuer">VNU University of Engineering and Technology (Awarded Every Semester)</div>
-              <div class="award-year">2019 – 2025</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- Technical Skills Section -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Competencies</span>
-          <h2 class="section-title">Technical Expertise</h2>
-          <p class="section-subtitle">Solvers, programming languages, and mathematical modeling toolkits.</p>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-category-card">
-            <h3 class="skill-cat-title">
-              <span>⚡ Optimization & Solvers</span>
-            </h3>
-            <div class="skill-chips">
-              <span class="skill-chip featured">MiniSat / Glucose / CaDiCaL</span>
-              <span class="skill-chip featured">Kissat / Cryptominisat</span>
-              <span class="skill-chip featured">MaxSAT (RC2, Open-WBO)</span>
-              <span class="skill-chip">PySAT</span>
-              <span class="skill-chip">IBM CPLEX</span>
-              <span class="skill-chip">Gurobi Optimizer</span>
-              <span class="skill-chip">Google OR-Tools</span>
-              <span class="skill-chip">Z3 SMT Solver</span>
-            </div>
-          </div>
-
-          <div class="skill-category-card">
-            <h3 class="skill-cat-title">
-              <span>💻 Programming & Engineering</span>
-            </h3>
-            <div class="skill-chips">
-              <span class="skill-chip featured">Python (Scientific / PySAT)</span>
-              <span class="skill-chip featured">C / C++ (High Performance)</span>
-              <span class="skill-chip featured">Rust (Solver Dev)</span>
-              <span class="skill-chip">Java (Core & Algorithms)</span>
-              <span class="skill-chip">LaTeX / TikZ</span>
-              <span class="skill-chip">Linux / Bash Scripting</span>
-              <span class="skill-chip">Git / CI/CD</span>
-            </div>
-          </div>
-
-          <div class="skill-category-card">
-            <h3 class="skill-cat-title">
-              <span>🔬 Research Methodologies</span>
-            </h3>
-            <div class="skill-chips">
-              <span class="skill-chip featured">Boolean Satisfiability (SAT)</span>
-              <span class="skill-chip featured">MaxSAT / Weighted MaxSAT</span>
-              <span class="skill-chip">Constraint Programming (CP)</span>
-              <span class="skill-chip">Mixed Integer Linear Programming (MIP)</span>
-              <span class="skill-chip">Symbolic Execution</span>
-              <span class="skill-chip">LLM-assisted Modeling</span>
-              <span class="skill-chip">Symmetry Breaking</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- Contact & Office Section -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Get in Touch</span>
-          <h2 class="section-title">Contact & Collaboration</h2>
-          <p class="section-subtitle">
-            I welcome research inquiries, PhD program discussions, and academic collaborations. Feel free to reach out via email or connect online.
-          </p>
-        </div>
-
-        <div class="contact-grid">
-          <!-- Left: Details -->
-          <div class="contact-card">
-            <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--text-primary);">Office & Contact Details</h3>
-            <p style="font-size: 0.925rem; color: var(--text-muted); margin-bottom: 1.5rem;">
-              Laboratory of Embedded Systems, Faculty of Information Technology
-            </p>
-
-            <ul class="contact-list">
-              <li class="contact-item">
-                <div class="contact-icon">📍</div>
-                <div>
-                  <div class="contact-info-title">Institution Address</div>
-                  <div class="contact-info-val">
-                    VNU University of Engineering and Technology<br>
-                    144 Xuan Thuy Street, Cau Giay, Hanoi, Vietnam
-                  </div>
-                </div>
-              </li>
-
-              <li class="contact-item">
-                <div class="contact-icon">✉️</div>
-                <div>
-                  <div class="contact-info-title">Institutional Email</div>
-                  <div class="contact-info-val">
-                    <a href="mailto:tuyenkv@vnu.edu.vn">tuyenkv@vnu.edu.vn</a>
-                  </div>
-                </div>
-              </li>
-
-              <li class="contact-item">
-                <div class="contact-icon">📧</div>
-                <div>
-                  <div class="contact-info-title">Personal Email</div>
-                  <div class="contact-info-val">
-                    <a href="mailto:tuyenkieuvan@gmail.com">tuyenkieuvan@gmail.com</a>
-                  </div>
-                </div>
-              </li>
-
-              <li class="contact-item">
-                <div class="contact-icon">📞</div>
-                <div>
-                  <div class="contact-info-title">Phone / WhatsApp</div>
-                  <div class="contact-info-val">+84 961 309 175</div>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Right: Quick Message Form -->
-          <div class="quick-message-box">
-            <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--text-primary);">Send a Message</h3>
-            <p style="font-size: 0.925rem; color: var(--text-muted); margin-bottom: 1.5rem;">
-              Fill out this quick form to generate a pre-formatted email directly to me.
-            </p>
-
-            <form onsubmit="handleContactSubmit(event)">
-              <div class="form-group">
-                <label class="form-label" for="contact-name">Your Name / Title</label>
-                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Prof. Alan Turing" required>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="contact-subject">Subject</label>
-                <input type="text" id="contact-subject" class="form-input" placeholder="e.g. PhD Opportunity / Research Collaboration" required>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="contact-msg">Message</label>
-                <textarea id="contact-msg" class="form-textarea" placeholder="Write your message here..." required></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary" style="width: 100%;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="22" y1="2" x2="11" y2="13"></line>
-                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                </svg>
-                <span>Send via Email</span>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div>
-        <p>&copy; 2026 <strong>Kieu Van Tuyen (Kiều Văn Tuyên)</strong>. All rights reserved.</p>
-        <p style="font-size: 0.8rem; margin-top: 0.25rem;">Built with academic precision &bull; Hosted on GitHub Pages.</p>
+}</pre>
       </div>
 
-      <div class="footer-links">
-        <a href="https://scholar.google.com/citations?user=Zq72t0wAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-        <a href="https://github.com/kieuvantuyen01" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/tuy%C3%AAn-ki%E1%BB%81u-v%C4%83n-443b57143/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="assets/cv.pdf" download="Kieu_Van_Tuyen_CV.pdf">Download CV</a>
+      <!-- Education Section -->
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>VNU University of Engineering and Technology</strong>, Hanoi, Vietnam <br>
+          Master of Science in Computer Science, Nov 2023 – Dec 2025 <br>
+          GPA: <strong>3.92 / 4.00</strong> (Highest Honor) <br>
+          Thesis: <em>Optimal SAT Encoding Methods for Combinatorial Optimization and Scheduling Problems</em> (Score: <strong>9.8 / 10.0</strong>) <br>
+          Supervisor: Dr. To Van Khanh
+        </li>
+        <li style="margin-top: 10px;">
+          <strong>VNU University of Engineering and Technology</strong>, Hanoi, Vietnam <br>
+          Bachelor of Science in Computer Science, Aug 2019 – May 2023 <br>
+          GPA: <strong>3.83 / 4.00</strong> (High Distinction) <br>
+          Thesis: <em>Verification of Multithreaded Programs based on Symbolic Execution</em> (Score: <strong>9.5 / 10.0</strong>, Excellent Thesis of the Council) <br>
+          Supervisor: Dr. To Van Khanh
+        </li>
+      </ul>
+
+      <!-- Experience & Teaching -->
+      <h2>Experience & Teaching</h2>
+      <ul>
+        <li>
+          <strong>Graduate Research Assistant</strong>, Laboratory of Embedded Systems, VNU-UET (Nov 2023 – Dec 2025) <br>
+          Conducted research on SAT/MaxSAT formulations for scheduling and packing; authored/co-authored 6 peer-reviewed papers.
+        </li>
+        <li style="margin-top: 8px;">
+          <strong>Teaching Assistant</strong>, Faculty of Information Technology, VNU-UET (Aug 2023 – Present) <br>
+          Courses: Object-Oriented Programming (OOP), Fundamental Informatics, Object-Oriented Analysis & Design (OOAD).
+        </li>
+        <li style="margin-top: 8px;">
+          <strong>Software Developer (OJT)</strong>, Toshiba Software Development (Vietnam) Co., Ltd. (May 2022 – Jun 2023) <br>
+          Maintained Japanese automated paper typesetting software and developed mobile UI for student transit systems.
+        </li>
+      </ul>
+
+      <!-- Honors & Awards -->
+      <h2>Honors & Awards</h2>
+      <ul>
+        <li><strong>Student of 5 Goods (Sinh viên 5 tốt)</strong>, Hanoi City Level & VNU Level (2021, 2022)</li>
+        <li><strong>Best Technicality Prize</strong>, AWS Build On Vietnam Contest (2022)</li>
+        <li><strong>Runner-up Track IDEATHON</strong>, EOS Network Foundation (2022)</li>
+        <li><strong>Second Prize</strong>, "Innovative Technology Ideas" VYTEC'21 Contest (2022)</li>
+        <li><strong>VNG's Voting Award</strong>, "Hackathon Open 2022" (Project: CvConnect)</li>
+        <li><strong>Academic Excellence Scholarships</strong>, VNU-UET (awarded every semester, 2019 – 2025)</li>
+      </ul>
+
+      <!-- Academic Service -->
+      <h2>Academic Service</h2>
+      <ul>
+        <li>Reviewer, International Conference on Intelligent Information Technology (ICIIT)</li>
+        <li>Reviewer, International Symposium on Information and Communication Technology (SOICT)</li>
+      </ul>
+
+      <!-- Footer -->
+      <div class="footer">
+        Website template adapted from <a href="https://github.com/jonbarron/website_template">Jon Barron</a>.
       </div>
+
     </div>
-  </footer>
 
-  <!-- Back to Top Button -->
-  <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <polyline points="18 15 12 9 6 15"></polyline>
-    </svg>
-  </button>
-
-  <!-- Interactive Scripts -->
-  <script src="js/main.js"></script>
-  <script>
-    function handleContactSubmit(e) {
-      e.preventDefault();
-      const name = document.getElementById('contact-name').value;
-      const subject = document.getElementById('contact-subject').value;
-      const msg = document.getElementById('contact-msg').value;
-      const mailtoUrl = `mailto:tuyenkv@vnu.edu.vn?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Dear Tuyen,\n\n" + msg + "\n\nBest regards,\n" + name)}`;
-      window.location.href = mailtoUrl;
-    }
-  </script>
-</body>
+    <!-- Minimal Script for BibTeX toggle -->
+    <script>
+      function toggleBibtex(id) {
+        var el = document.getElementById('bibtex-' + id);
+        if (el) {
+          el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+        }
+      }
+    </script>
+  </body>
 </html>
