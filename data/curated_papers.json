@@ -1,0 +1,73 @@
+{
+  "a compact sat encoding for non-preemptive task scheduling on multiple identical resources": {
+    "highlighted": true,
+    "doi": "https://doi.org/10.2478/cait-2025-0027",
+    "description": "We propose a novel compact Boolean Satisfiability (SAT) encoding that substantially reduces clauses and auxiliary variables while preserving unit propagation, outperforming commercial MIP solvers on difficult scheduling benchmarks.",
+    "bibtex_id": "cit2025"
+  },
+  "efficient sat and maxsat techniques for solving the two-dimensional strip packing problem": {
+    "highlighted": true,
+    "description": "Presents exact SAT and MaxSAT formulation techniques utilizing order encodings, specialized non-overlapping constraints, and symmetry breaking for 2D Strip Packing, establishing new upper bounds and solving previously open benchmark instances.",
+    "bibtex_id": "strip2025"
+  },
+  "an efficient maxsat-ddd approach for train rescheduling via precedence propagation and hybrid amo encodings": {
+    "highlighted": true,
+    "arxiv": "https://arxiv.org/abs/2606.16814",
+    "code": "https://github.com/kieuvantuyen01/maxsattrainscheduling",
+    "description": "Develops a Disjunctive Delay Decision (DDD) MaxSAT framework combined with precedence propagation and hybrid At-Most-One encodings for real-time railway train rescheduling under severe network delays.",
+    "bibtex_id": "train2026"
+  },
+  "sequential counter encoding for staircase at-most-one constraints": {
+    "highlighted": true,
+    "doi": "https://www.scitepress.org/Papers/2025/131718/",
+    "description": "Introduces a specialized Sequential Counter encoding for staircase overlapping At-Most-One constraint topologies, reducing clause count by up to 40% while preserving unit propagation strength.",
+    "bibtex_id": "icaart2024"
+  },
+  "an efficient sat encoding for solving the social golfer problem": {
+    "description": "Combines lexicographical symmetry-breaking constraints with compact cardinality formulations to solve the Social Golfer Problem (CSPLib prob027) efficiently.",
+    "bibtex_id": "golfer2025"
+  },
+  "sat-based approaches for two-dimensional bin packing: a comprehensive comparison with mip and cp methods": {
+    "description": "A systematic empirical study comparing modern SAT formulations for 2D Bin Packing against Mixed Integer Programming (MIP) and Constraint Programming (CP) solvers.",
+    "bibtex_id": "kse2025"
+  },
+  "solving at-least sequence constraints in nurse rostering problem using sat": {
+    "description": "Formulates at-least sequence constraints in hospital nurse rostering into SAT, proving faster solving times over traditional integer formulations.",
+    "bibtex_id": "iscit2025"
+  },
+  "compact sat encoding for power peak minimization": {
+    "arxiv": "https://arxiv.org/abs/2512.11435",
+    "description": "Compact SAT encodings for non-linear power peak minimization in manufacturing schedules, achieving exact solutions on larger benchmarks than previous mathematical programs.",
+    "bibtex_id": "power2025"
+  },
+  "cycle time minimization for the simple assembly line balancing problem under peak power constraints": {
+    "arxiv": "https://arxiv.org/abs/2608.24779",
+    "description": "Addresses simple assembly line balancing (SALBP) subject to station peak power limits, minimizing cycle time via exact discrete modeling.",
+    "bibtex_id": "salbp2026"
+  },
+  "compact sat and maxsat encodings for business-to-business meeting scheduling with idle-time balancing": {
+    "arxiv": "https://arxiv.org/abs/2608.00614",
+    "code": "https://github.com/kieuvantuyen01/Business-Meeting-Scheduling-Problem",
+    "description": "Formulates B2B meeting scheduling with idle waiting time balance using PySAT and RC2 MaxSAT solvers.",
+    "bibtex_id": "b2b2026"
+  },
+  "solving the two-dimensional single stock size cutting stock problem with sat and maxsat": {
+    "arxiv": "https://arxiv.org/abs/2604.01732",
+    "description": "Applies SAT and MaxSAT techniques to the 2D single stock cutting stock problem, comparing pattern generation vs. direct placement models.",
+    "bibtex_id": "cutting2026"
+  },
+  "sat encodings for bandwidth coloring: a systematic design study": {
+    "arxiv": "https://arxiv.org/abs/2602.08423",
+    "code": "https://github.com/kieuvantuyen01/lpr-bcp",
+    "description": "Systematically investigates direct, order, and log encodings for the Bandwidth Coloring Problem, analyzing propagation efficiency trade-offs.",
+    "bibtex_id": "bcp2026"
+  },
+  "sat encoding for set of at-most-k cardinality constraints with ladder shape": {
+    "description": "Extends sequential counter encodings to structured ladder-shaped At-Most-K constraints, minimizing auxiliary variables.",
+    "bibtex_id": "ladder2025"
+  },
+  "biểu diễn sat tối ưu cho các bài toán tối ưu hoá tổ hợp": {
+    "description": "Luận văn Thạc sĩ Khoa học Máy tính: Tổng hợp các phương pháp biểu diễn SAT tối ưu, lý thuyết rút gọn mệnh đề và đánh giá thực nghiệm trên các bài toán xếp dỡ và điều độ.",
+    "bibtex_id": "thesis2025"
+  }
+}

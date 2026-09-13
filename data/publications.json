@@ -1,0 +1,114 @@
+[
+  {
+    "title": "Cycle time minimization for the simple assembly line balancing problem under peak power constraints",
+    "authors": "BG Hoang, T Van Kieu, K Van To",
+    "venue": "arXiv preprint arXiv:2608.24779, 2026",
+    "year": "2026",
+    "cites": "",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:WF5omc3nYNoC"
+  },
+  {
+    "title": "Compact SAT and MaxSAT Encodings for Business-to-Business Meeting Scheduling with Idle-Time Balancing",
+    "authors": "LD Nguyen, T Van Kieu, K Van To",
+    "venue": "arXiv preprint arXiv:2608.00614, 2026",
+    "year": "2026",
+    "cites": "",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:eQOLeE2rZwMC"
+  },
+  {
+    "title": "Biểu diễn SAT tối ưu cho các bài toán tối ưu hoá tổ hợp",
+    "authors": "TV Kieu, KV To, ...",
+    "venue": "",
+    "year": "2026",
+    "cites": "",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:YsMSGLbcyi4C"
+  },
+  {
+    "title": "An Efficient MaxSAT-DDD Approach for Train Rescheduling via Precedence Propagation and Hybrid AMO Encodings",
+    "authors": "T Van Kieu, TH Nguyen, K Van To",
+    "venue": "arXiv preprint arXiv:2606.16814, 2026",
+    "year": "2026",
+    "cites": "",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:W7OEmFMy1HYC"
+  },
+  {
+    "title": "Solving the Two-dimensional single stock size Cutting Stock Problem with SAT and MaxSAT",
+    "authors": "T Van Kieu, CL Hoang, K Van To",
+    "venue": "arXiv preprint arXiv:2604.01732, 2026",
+    "year": "2026",
+    "cites": "",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:Y0pCki6q_DkC"
+  },
+  {
+    "title": "SAT Encodings for Bandwidth Coloring: A Systematic Design Study",
+    "authors": "DTK Nguyen, T Van Kieu, K Van To",
+    "venue": "arXiv preprint arXiv:2602.08423, 2026",
+    "year": "2026",
+    "cites": "",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:Tyk-4Ss8FVUC"
+  },
+  {
+    "title": "Compact SAT Encoding for Power Peak Minimization",
+    "authors": "T Van Kieu, PC Nguyen, BG Hoang, K Van To",
+    "venue": "arXiv preprint arXiv:2512.11435, 2025",
+    "year": "2025",
+    "cites": "",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:zYLM7Y9cAGgC"
+  },
+  {
+    "title": "An efficient SAT encoding for solving the Social Golfer Problem",
+    "authors": "T Van Kieu, N Tan Nguyen, K Van To",
+    "venue": "RAIRO - Operations Research, 2025",
+    "year": "2025",
+    "cites": "",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:IjCSPb-OGe4C"
+  },
+  {
+    "title": "Solving at-Least Sequence Constraints in Nurse Rostering Problem Using SAT",
+    "authors": "K Van To, H Xuan Truong, Q Hong Nguyen, N Xuan Dao, T Van Kieu",
+    "venue": "24th International Symposium on Communications and Information Technologies, 2025",
+    "year": "2025",
+    "cites": "1",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:UeHWp8X0CEIC"
+  },
+  {
+    "title": "SAT-Based Approaches for Two-Dimensional Bin Packing: A Comprehensive Comparison with MIP and CP Methods",
+    "authors": "T Van Kieu, C Linh Hoang, K Van To",
+    "venue": "17th International Conference on Knowledge and Systems Engineering (KSE 2025), 2025",
+    "year": "2025",
+    "cites": "1",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:qjMakFHDy7sC"
+  },
+  {
+    "title": "Efficient SAT and MaxSAT techniques for solving the Two-Dimensional Strip Packing Problem",
+    "authors": "T Van Kieu, DQ Le, K Van To",
+    "venue": "SciELO Preprints, 2025",
+    "year": "2025",
+    "cites": "1",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:2osOgNQ5qMEC"
+  },
+  {
+    "title": "A Compact SAT Encoding for Non-Preemptive Task Scheduling on Multiple Identical Resources",
+    "authors": "T Van Kieu, K Van To",
+    "venue": "Cybernetics and Information Technologies 25 (3), 104-122, 2025",
+    "year": "2025",
+    "cites": "",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:9yKSN-GCB0IC"
+  },
+  {
+    "title": "Sequential Counter Encoding for Staircase At-Most-One Constraints.",
+    "authors": "HX Truong, T Van Kieu, K Van To",
+    "venue": "ICAART (2), 164-175, 2025",
+    "year": "2025",
+    "cites": "5",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:d1gkVwhDpl0C"
+  },
+  {
+    "title": "Sequential Counter encoding for Staircase At-Most-One constraints",
+    "authors": "T Hieu, K Tuyen Van, T Khanh Van",
+    "venue": "ICAART - 17th International Conference on Agents and Artificial Intelligence, 2024",
+    "year": "2024",
+    "cites": "",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:u-x6o8ySG0sC"
+  }
+]
