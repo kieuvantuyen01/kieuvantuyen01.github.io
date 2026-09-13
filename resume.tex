@@ -1,0 +1,171 @@
+% Document class and font size
+\documentclass[a4paper,10pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{a4paper, margin=0.7in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{hyperref} % For hyperlinks
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{graphicx} % For including images
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{0.8\baselineskip}{0.5\baselineskip} % Section title spacing
+%%%%%%%%%%
+
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyhead[L]{\textit{Kieu Van Tuyen}}
+\fancyhead[R]{\textit{January 2026}}
+\thispagestyle{empty} % Remove header from the first page
+
+% Header
+\noindent
+\begin{minipage}[t]{0.72\textwidth}
+\textbf{\LARGE Kieu Van Tuyen}\\[6pt]
+Master of Science in Computer Science\\
+VNU University of Engineering and Technology, Hanoi, Vietnam\\[6pt]
+\href{mailto:tuyenkv@vnu.edu.vn}{tuyenkv@vnu.edu.vn} | \href{tel:+84961309175}{+84 961 309 175}\\
+Date of Birth: November 11, 2001 | Nationality: Vietnamese\\
+Google Scholar: \href{https://scholar.google.com/citations?user=Zq72t0wAAAAJ}{scholar.google.com/citations?user=Zq72t0wAAAAJ}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.25\textwidth}
+\raggedleft
+\vspace{-1.2cm}
+\includegraphics[width=3cm]{profile_image.jpg}
+\end{minipage}
+
+% Research Interests Section
+\section*{RESEARCH INTERESTS}
+\noindent
+Combinatorial Optimization, Mathematical Optimization, SAT/MaxSAT Solving, Constraint Programming, Operations Research, Large Language Models (LLM) for Optimization, Decision-Making Systems
+
+% Education Section
+\section*{EDUCATION}
+\noindent
+\textbf{VNU University of Engineering and Technology}, Hanoi, Vietnam \hfill Nov 2023 | Dec 2025\\
+Master of Science in Computer Science \hfill GPA: 3.92/4.00\\
+Thesis: \textit{Optimal SAT Encoding Methods for Combinatorial Optimization and Scheduling Problems} (9.8/10)\\
+Supervisor: Dr. To Van Khanh
+
+\vspace{0.3cm}
+\noindent
+\textbf{VNU University of Engineering and Technology}, Hanoi, Vietnam \hfill 2019 | 2023\\
+Bachelor of Science in Computer Science \hfill GPA: 3.83/4.00\\
+Thesis: \textit{Verification of Multithreaded Programs based on Symbolic Execution} (9.5/10)\\
+Supervisor: Dr. To Van Khanh
+
+% Research Experience Section
+\section*{RESEARCH EXPERIENCE}
+\noindent
+\textbf{VNU University of Engineering and Technology} \hfill Hanoi, Vietnam\\
+\textit{Graduate Research Assistant} \hfill Nov 2023 | Dec 2025
+\begin{itemize}
+    \item Developed novel SAT/MaxSAT encoding techniques for NP-hard combinatorial optimization problems (scheduling, packing, cardinality constraints).
+    \item Achieved significant improvements over state-of-the-art commercial solvers including IBM CPLEX, Gurobi, and Google OR-Tools on standard benchmarks.
+    \item Solved previously unsolvable instances of combinatorial problems using proposed encoding methods.
+    \item Published 6 papers (4 as first author) in international journals and conferences.
+\end{itemize}
+
+% Industry Experience Section
+\section*{INDUSTRY EXPERIENCE}
+\noindent
+\textbf{Toshiba Software Development (Vietnam) Co., Ltd.} \hfill Hanoi, Vietnam\\
+\textit{Software Developer} \hfill May 2022 | Jun 2023
+\begin{itemize}
+    \item Developed and optimized software modules using Java, C\# and C/C++ in an Agile environment.
+    \item Applied algorithmic techniques to improve system performance and collaborated with cross-functional teams in an international setting.
+\end{itemize}
+
+% Publications Section
+\section*{PUBLICATIONS}
+\noindent
+\textbf{Journal Papers}
+\begin{enumerate}[leftmargin=*]
+    \item \textit{T. V. Kieu}, T. V. Khanh (2025). ``A Compact SAT Encoding for Non-Preemptive Task Scheduling on Multiple Identical Resources''. \textit{Cybernetics and Information Technologies}, Vol. 25, No. 3.
+    
+    \item \textit{T. V. Kieu}, D. Q. Le, T. V. Khanh (2025). ``Efficient SAT and MaxSAT Techniques for Solving the Two-Dimensional Strip Packing Problem''. \textit{Pesquisa Operacional}.
+    
+    \item \textit{T. V. Kieu}, N. T. Nguyen, T. V. Khanh (2025). ``An Efficient SAT Encoding for Solving the Social Golfer Problem''. \textit{RAIRO - Operations Research}.
+    
+    \item H. T. Xuan, \textit{T. V. Kieu}, T. V. Khanh (under review). ``SAT Encoding for Set of At-Most-K Cardinality Constraints with Ladder Shape''. \textit{Constraints}.
+    
+    \item \textit{T. V. Kieu}, P. C. Nguyen, B. G. Hoang, T. V. Khanh (under review). ``Compact SAT Encoding for Power Peak Minimization''. \textit{Journal of Combinatorial Optimization}.
+\end{enumerate}
+
+\noindent
+\textbf{Conference Papers}
+\begin{enumerate}[leftmargin=*, resume]
+    \item T. Hieu, \textit{T. V. Kieu}, T. V. Khanh (2024). ``Sequential Counter Encoding for Staircase At-Most-One Constraints''. \textit{17th International Conference on Agents and Artificial Intelligence (ICAART 2024)}. SCITEPRESS.
+    
+    \item \textit{T. V. Kieu}, C. L. Hoang, T. V. Khanh (2025). ``SAT-Based Approaches for Two-Dimensional Bin Packing: A Comprehensive Comparison with MIP and CP Methods''. \textit{17th International Conference on Knowledge and Systems Engineering (KSE 2025)}.
+    
+    \item T. V. Khanh, H. X. Truong, Q. H. Nguyen, N. X. Dao, \textit{T. V. Kieu} (2025). ``Solving At-Least Sequence Constraints in Nurse Rostering Problem Using SAT''. \textit{24th International Symposium on Communications and Information Technologies (ISCIT 2025)}.
+\end{enumerate}
+
+% Research Highlights Section
+\section*{RESEARCH HIGHLIGHTS}
+\begin{itemize}
+    \item \textbf{Scheduling Optimization:} Developed encoding methods that outperform commercial MIP solvers on task scheduling and assembly line balancing problems.
+    \item \textbf{Packing Problems:} Created comprehensive SAT/MaxSAT framework for 2D packing problems competitive with Google OR-Tools.
+    \item \textbf{Cardinality Constraints:} Proposed novel sequential counter encodings with reduced auxiliary variables and optimized clause structures.
+    \item \textbf{Symmetry Breaking:} Integrated effective symmetry-breaking techniques to significantly reduce search space in combinatorial problems.
+\end{itemize}
+
+% Skills Section
+\section*{TECHNICAL SKILLS}
+\begin{itemize}
+    \item \textbf{Programming:} Python, C/C++, Java
+    \item \textbf{Optimization Tools:} SAT Solvers (MiniSat, Glucose, CaDiCaL), MaxSAT Solvers, IBM CPLEX, Gurobi, Google OR-Tools
+    \item \textbf{Research Areas:} Boolean Satisfiability (SAT), MaxSAT, Constraint Programming, Integer Programming, Combinatorial Optimization
+    \item \textbf{Other:} \LaTeX, Git, Linux, Algorithm Design and Analysis
+\end{itemize}
+
+% Language Section
+\section*{LANGUAGE PROFICIENCY}
+\begin{itemize}
+    \item \textbf{English:} Aptis Certificate (CEFR B2)
+    \item \textbf{Vietnamese:} Native
+\end{itemize}
+
+% Future Research Directions
+\section*{RESEARCH VISION}
+\noindent
+I am highly motivated to pursue PhD research at the intersection of \textbf{Optimization} and \textbf{Artificial Intelligence}. My strong foundation in combinatorial optimization and SAT solving positions me well to explore emerging research directions:
+\begin{itemize}
+    \item Leveraging \textbf{Large Language Models (LLMs)} to automatically formulate, encode, and solve optimization problems from natural language descriptions.
+    \item Developing LLM-assisted approaches for generating efficient SAT/MIP encodings and selecting appropriate solver configurations.
+    \item Applying optimization techniques to real-world decision-making problems in \textbf{transportation systems}, \textbf{logistics}, and \textbf{resource allocation}.
+    \item Exploring hybrid approaches that combine the exactness of constraint-based methods with AI-driven heuristics for scalability.
+\end{itemize}
+
+% References Section
+\section*{REFERENCES}
+\textbf{Dr. To Van Khanh}\\
+\textit{Lecturer, Faculty of Information Technology, VNU University of Engineering and Technology, Hanoi, Vietnam}\\
+E-mail: \href{mailto:khanhtv@vnu.edu.vn}{khanhtv@vnu.edu.vn}\\
+Google Scholar: \href{https://scholar.google.com/citations?user=kq2ht6wAAAAJ}{scholar.google.com/citations?user=kq2ht6wAAAAJ}\\
+\textit{(Master's Thesis Supervisor)}
+
+% End document
+\end{document}
