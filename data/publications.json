@@ -1,5 +1,21 @@
 [
   {
+    "title": "StructHCP: Structure-Aware SAT--CEGAR for the Hamiltonian Cycle Problem",
+    "authors": "Q Van Vi, T Van Kieu, K Van To",
+    "venue": "arXiv preprint arXiv:2610.14780, 2026",
+    "year": "2026",
+    "cites": "",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:LkGwnXOMwfcC"
+  },
+  {
+    "title": "Continuity-First Lexicographic Optimization for Home-Care Resource Allocation",
+    "authors": "T Van Kieu, KN Do, K Van To",
+    "venue": "arXiv preprint arXiv:2609.15953, 2026",
+    "year": "2026",
+    "cites": "",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:ufrVoPGSRksC"
+  },
+  {
     "title": "Cycle time minimization for the simple assembly line balancing problem under peak power constraints",
     "authors": "BG Hoang, T Van Kieu, K Van To",
     "venue": "arXiv preprint arXiv:2608.24779, 2026",
@@ -48,11 +64,19 @@
     "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:Tyk-4Ss8FVUC"
   },
   {
+    "title": "Compact SAT encoding for power peak minimization in assembly line balancing",
+    "authors": "T Van Kieu, PC Nguyen, BG Hoang, K Van To",
+    "venue": "Journal of Combinatorial Optimization 52 (3), 1-33, 2026",
+    "year": "2026",
+    "cites": "",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:_FxGoFyzp5QC"
+  },
+  {
     "title": "Compact SAT Encoding for Power Peak Minimization",
     "authors": "T Van Kieu, PC Nguyen, BG Hoang, K Van To",
     "venue": "arXiv preprint arXiv:2512.11435, 2025",
     "year": "2025",
-    "cites": "",
+    "cites": "1",
     "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:zYLM7Y9cAGgC"
   },
   {
@@ -100,7 +124,7 @@
     "authors": "HX Truong, T Van Kieu, K Van To",
     "venue": "ICAART (2), 164-175, 2025",
     "year": "2025",
-    "cites": "5",
+    "cites": "6",
     "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zq72t0wAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zq72t0wAAAAJ:d1gkVwhDpl0C"
   },
   {

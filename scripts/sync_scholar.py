@@ -5,25 +5,26 @@ Fetches the latest publications and citations from Google Scholar
 and updates data/publications.json and index.html.
 """
 
-import re
+import html
+import http.cookiejar
 import json
-import urllib.request
 import os
+import re
+import subprocess
 import sys
+import tempfile
+import urllib.error
+import urllib.parse
+import urllib.request
 from bs4 import BeautifulSoup
 
 SCHOLAR_ID = "Zq72t0wAAAAJ"
 SCHOLAR_URL = f"https://scholar.google.com/citations?user={SCHOLAR_ID}&hl=en&sortby=pubdate&cstart=0&pagesize=100"
 
-USER_NAMES = [
-    r"\bT\.?\s*V\.?\s*Kieu\b",
-    r"\bT\s+Van\s+Kieu\b",
-    r"\bTV\s+Kieu\b",
-    r"\bK\s+Tuyen\s+Van\b",
-    r"\bKieu\s+Van\s+Tuyen\b",
-    r"\bTuyen\s+Van\s+Kieu\b",
-    r"\bKiều\s+Văn\s+Tuyên\b"
-]
+COMBINED_NAME_PATTERN = re.compile(
+    r"\b(?:T\.?\s*V\.?\s*Kieu|T\s+Van\s+Kieu|TV\s+Kieu|K\s+Tuyen\s+Van|Kieu\s+Van\s+Tuyen|Tuyen\s+Van\s+Kieu|Kiều\s+Văn\s+Tuyên)\b",
+    re.IGNORECASE
+)
 
 def clean_text(text):
     return re.sub(r"\s+", " ", text).strip()
@@ -32,22 +33,93 @@ def normalize_title(title):
     return re.sub(r"[^a-zA-Z0-9\s]", "", title).lower().strip()
 
 def highlight_author(authors_str):
-    res = authors_str
-    for pattern in USER_NAMES:
-        res = re.sub(f"({pattern})", r"<strong>\1</strong>", res, flags=re.IGNORECASE)
-    return res
+    return COMBINED_NAME_PATTERN.sub(r"<strong>\g<0></strong>", authors_str)
 
 def fetch_scholar_papers():
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept-Language": "en-US,en;q=0.9",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
-    }
-    req = urllib.request.Request(SCHOLAR_URL, headers=headers)
-    try:
-        html = urllib.request.urlopen(req, timeout=15).read().decode("utf-8")
-    except Exception as e:
-        print(f"Error fetching Google Scholar: {e}", file=sys.stderr)
+    candidate_urls = [
+        SCHOLAR_URL,
+        f"https://scholar.google.com.vn/citations?user={SCHOLAR_ID}&hl=en&sortby=pubdate&cstart=0&pagesize=100",
+    ]
+
+    html = ""
+    # Strategy 1: curl with cookie jar & modern browser TLS headers
+    for url in candidate_urls:
+        cookie_file = tempfile.mktemp(suffix=".txt")
+        try:
+            subprocess.run(
+                [
+                    "curl", "-s", "-L", "--compressed",
+                    "-c", cookie_file,
+                    "-A", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                    "https://scholar.google.com/",
+                ],
+                timeout=8,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
+            cmd = [
+                "curl", "-s", "-L", "--compressed",
+                "-b", cookie_file, "-c", cookie_file,
+                "-A", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "-H", "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+                "-H", "Accept-Language: en-US,en;q=0.9",
+                "-H", "Sec-Ch-Ua: \"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
+                "-H", "Sec-Ch-Ua-Mobile: ?0",
+                "-H", "Sec-Ch-Ua-Platform: \"Windows\"",
+                "-H", "Sec-Fetch-Dest: document",
+                "-H", "Sec-Fetch-Mode: navigate",
+                "-H", "Sec-Fetch-Site: same-origin",
+                "-H", "Upgrade-Insecure-Requests: 1",
+                "-H", "Referer: https://scholar.google.com/",
+                url,
+            ]
+            res = subprocess.run(cmd, capture_output=True, text=True, timeout=20)
+            if res.returncode == 0 and "gsc_a_tr" in res.stdout:
+                html = res.stdout
+                break
+        except Exception:
+            pass
+        finally:
+            if os.path.exists(cookie_file):
+                try:
+                    os.remove(cookie_file)
+                except Exception:
+                    pass
+
+    # Strategy 2: Python urllib with CookieJar if curl did not succeed
+    if not html:
+        for url in candidate_urls:
+            try:
+                cj = http.cookiejar.CookieJar()
+                opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))
+                headers = {
+                    "User-Agent": (
+                        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                        "AppleWebKit/537.36 (KHTML, like Gecko) "
+                        "Chrome/128.0.0.0 Safari/537.36"
+                    ),
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                    "Accept-Language": "en-US,en;q=0.9",
+                    "Referer": "https://scholar.google.com/",
+                }
+                # Bootstrap cookies
+                req_init = urllib.request.Request("https://scholar.google.com/", headers=headers)
+                try:
+                    opener.open(req_init, timeout=10)
+                except Exception:
+                    pass
+
+                req_profile = urllib.request.Request(url, headers=headers)
+                with opener.open(req_profile, timeout=20) as resp:
+                    content = resp.read().decode("utf-8")
+                    if "gsc_a_tr" in content:
+                        html = content
+                        break
+            except Exception as e:
+                print(f"[!] Error fetching Google Scholar ({url}): {e}", file=sys.stderr)
+
+    if not html:
+        print("[!] Google Scholar anti-bot 403 on cloud runner. Preserving existing publications.", file=sys.stderr)
         return []
 
     soup = BeautifulSoup(html, "html.parser")
